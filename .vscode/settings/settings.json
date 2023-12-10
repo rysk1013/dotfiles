@@ -1,0 +1,664 @@
+{
+  // ====================================
+  // windows設定
+  // ====================================
+  // PowerShellをgitbashに変更
+  "sync.gist": "eac7f5e1f4792ceff16056449bdf06ee",
+  //コンソールで使用するbashの階層
+  "terminal.external.windowsExec": "/usr/bin/bash",
+  // GitBashの読み込む階層
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  // 既定のターミナル設定
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  // PHPプログラムの読み込む階層
+  "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+  // ====================================
+  // ファイル保存時の設定
+  // ====================================
+  // 自動保存設定をする
+  "files.autoSave": "afterDelay",
+  // ====================================
+  // ファイル保存時に行われるアクション
+  // ====================================
+  // ファイル保存時、コードを整形する
+  "editor.formatOnSave": true,
+  // ファイル保存時、同時に行われるアクション
+  "editor.codeActionsOnSave": {
+    // 拡張機能Prettierのチェックを走らせる
+    "source.fixAll.prettier": true
+  },
+  // ファイル保存時、最終行に改行を挿入する
+  "files.insertFinalNewline": true,
+  // ファイル保存時、最終行以降の空行を削除する
+  "files.trimFinalNewlines": true,
+  // ファイル保存時、末尾の空白をトリミングする
+  "files.trimTrailingWhitespace": true,
+  // ====================================
+  // ファイル参照から除外
+  // ====================================
+  // ファイル参照から除外してCPU軽減
+  "files.watcherExclude": {
+    "**/Library/**": true,
+    "**/images/**": true,
+    "**/node_modules/**": true
+  },
+  // サイドメニューから非表示にするファイル
+  "files.exclude": {
+    "**/*.map": true,
+    "**/*.lock": true
+  },
+  // ====================================
+  // エディタ全体のUIに関する設定
+  // ====================================
+  // テーマカラー
+  "workbench.colorTheme": "Default Dark+",
+  // ミニマップを表示する
+  "editor.minimap.enabled": false,
+  // ファイルのパンくずリストを表示する
+  "breadcrumbs.enabled": true,
+  // メニューバーを表示する
+  "window.menuBarVisibility": "visible",
+  // スタートページの表示
+  "workbench.startupEditor": "none",
+  // サイドバーの位置
+  "workbench.sideBar.location": "left",
+  // 新しいタブを開く位置
+  "workbench.editor.openPositioning": "last",
+  // タブの表示幅を狭めて少し重ねる
+  "workbench.editor.tabSizing": "shrink",
+  // ツリーのインデントガイドを表示する
+  "workbench.tree.renderIndentGuides": "always",
+  // ====================================
+  // エディタのUIに関する詳細設定
+  // ====================================
+  // ホワイトスペースの表示
+  "editor.renderWhitespace": "all",
+  // タブサイズ
+  "editor.tabSize": 2,
+  // インデントガイドを表示する
+  "editor.guides.indentation": false,
+  // ブラケットのペアガイドを表示する
+  "editor.guides.bracketPairs": true,
+  // ブラケットの水平方向のペアガイドを表示する
+  "editor.guides.bracketPairsHorizontal": true,
+  // ブラケットのペアごとに色を分ける
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  // 選択範囲のハイライトに角丸を適用する
+  "editor.roundedSelection": false,
+  // 行の左端に余白を作る・ブレークポイントの表示
+  "editor.glyphMargin": false,
+  // 文字数の縦ライン表示
+  "editor.rulers": [0],
+  // 最終行よりも下へのスクロールを許可
+  "editor.scrollBeyondLastLine": true,
+  // エディターの幅で折り返し
+  "editor.wordWrap": "off",
+  // 折り返し行にインデント追加
+  "editor.wrappingIndent": "indent",
+  // ====================================
+  // エディタのタイポグラフィーに関する設定
+  // ====================================
+  // フォント
+  "editor.fontFamily": "'Consolas','Ricty Diminished','monospace','Fira Code'",
+  // 文字サイズ
+  "editor.fontSize": 15,
+  // 行間
+  "editor.lineHeight": 30,
+  // テーマカラーのカスタマイズ
+  "editor.tokenColorCustomizations": {
+    // コメントアウト
+    "comments": "#999"
+  },
+  // システム依存文字をハイライト
+  "todohighlight.keywords": [
+    "©",
+    "Ⅰ",
+    "Ⅱ",
+    "Ⅲ",
+    "Ⅳ",
+    "Ⅴ",
+    "Ⅵ",
+    "Ⅶ",
+    "Ⅷ",
+    "Ⅸ",
+    "Ⅹ",
+    "ⅰ",
+    "ⅱ",
+    "ⅲ",
+    "ⅳ",
+    "ⅴ",
+    "ⅵ",
+    "ⅶ",
+    "ⅷ",
+    "ⅸ",
+    "ⅹ",
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤",
+    "⑥",
+    "⑦",
+    "⑧",
+    "⑨",
+    "⑩",
+    "⑪",
+    "⑫",
+    "⑬",
+    "⑭",
+    "⑮",
+    "⑯",
+    "⑰",
+    "⑱",
+    "⑲",
+    "⑳",
+    "㊤",
+    "㊥",
+    "㊦",
+    "㊧",
+    "㊨",
+    "㍉",
+    "㍍",
+    "㌔",
+    "㌘",
+    "㌧",
+    "㌦",
+    "㍑",
+    "㌫",
+    "㌢",
+    "㎝",
+    "㎏",
+    "㎡",
+    "㏍",
+    "℡",
+    "№",
+    "㍻",
+    "㍼",
+    "㍽",
+    "㍾",
+    "㈱",
+    "㈲",
+    "㈹",
+    "〜",
+    "—",
+    "⺀"
+  ],
+  // ====================================
+  // ワークベンチの設定
+  // ====================================
+  // アイコンテーマ
+  "workbench.iconTheme": "material-icon-theme",
+  // ツリーのインデント
+  "workbench.tree.indent": 18,
+  // アニメーションを減らす
+  "workbench.reduceMotion": "on",
+  // ダブルクリックでファイルを開く
+  "workbench.list.openMode": "doubleClick",
+  // ワンクリックで簡易表示
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  //ファイルを開いた順に閉じる
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  // タブに表示する文字列の設定
+  "workbench.editor.labelFormat": "short",
+  // 入力内容を保持
+  "workbench.quickOpen.preserveInput": true,
+  // 最後にコマンドパレットに入力した内容の保持
+  "workbench.commandPalette.preserveInput": true,
+  // ====================================
+  // ウィンドウの設定
+  // ====================================
+  // 前回開いていたフォルダを開くかの設定
+  "window.openWithoutArgumentsInNewWindow": "off",
+  "window.restoreWindows": "one",
+  // ウインドウタイトルにパスを表示する
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  // ====================================
+  // ターミナルの設定
+  // ====================================
+  // ターミナルの文字サイズ
+  "terminal.integrated.fontSize": 18,
+  // ターミナルの行間
+  "terminal.integrated.lineHeight": 1.25,
+  // 新規ターミナル画面の表示位置
+  "terminal.integrated.defaultLocation": "editor",
+  // ターミナルに外部ツールも統合
+  "terminal.explorerKind": "external",
+  // 範囲選択してコピー
+  "terminal.integrated.copyOnSelection": true,
+  // ====================================
+  // キャレットの設定
+  // ====================================
+  // エディタのキャレットの幅
+  "editor.cursorWidth": 2,
+  // エディタのキャレットアニメーション
+  "editor.cursorBlinking": "smooth",
+  // ターミナルのキャレットのスタイル
+  "terminal.integrated.cursorStyle": "block",
+  // ターミナルのキャレットアニメーション
+  "terminal.integrated.cursorBlinking": true,
+  // テーマカラーの配色を上書きする
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#BCBABE",
+    "terminalCursor.foreground": "#BCBABE"
+  },
+  // ====================================
+  // フォーマッターとコード整形に関する設定
+  // ====================================
+  // 入力時、コードを自動的に整形をする
+  "editor.formatOnType": true,
+  // ペースト時、コードを自動的に整形をする
+  "editor.formatOnPaste": false,
+  // デフォルトのフォーマッターを設定する
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // ------------------------------------
+  // 言語別フォーマッター指定
+  // ------------------------------------
+  // HTML
+  "[html]": {
+    // HTMLの整形フォーマット
+    "editor.defaultFormatter": "vscode.html-language-features",
+    // タブサイズ
+    "editor.tabSize": 4
+  },
+  // css
+  "[css]": {
+    // CSSの整形フォーマットの選択
+    "editor.defaultFormatter": "HookyQR.beautify",
+    // タブサイズ
+    "editor.tabSize": 2,
+  },
+  // json
+  "[json]": {
+    // 拡張機能のPrettierを適用する
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // 保存時にフォーマット
+    "editor.formatOnSave": true,
+    // タブサイズ
+    "editor.tabSize": 2,
+  },
+  // PHP
+  "[php]": {
+    // 拡張機能のphpcbfを適用する
+    "editor.defaultFormatter": "persoderlind.vscode-phpcbf",
+    // ペースト時、自動的に整形しない
+    "editor.formatOnSave": false,
+    // タブサイズ
+    "editor.tabSize": 4
+  },
+  // blade(Larabelテンプレート)
+  "[blade]": {
+    // フォーマットの選択
+    "editor.defaultFormatter": "onecentlin.laravel-blade",
+    // タブサイズ
+    "editor.tabSize": 2,
+  },
+  // フォーマット有効化
+  "blade.format.enable": true,
+  // JavaScript
+  "[javascript]": {
+    // フォーマットの選択
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // タブサイズ
+    "editor.tabSize": 2,
+  },
+  // インポートパスの自動更新を有効
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // 構文チェックを有効化
+  "javascript.validate.enable": false,
+  // markdown
+  "[markdown]": {
+    // 拡張機能のmarkdownlintを適用する
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    // ペースト時、自動的に整形しない
+    "editor.formatOnPaste": false,
+    // Markdown のファイルは行末の空白をトリミングしない
+    "files.trimTrailingWhitespace": false,
+  },
+  // ====================================
+  // 別個設定
+  // ====================================
+  // ------------------------------------
+  // HTML
+  // ------------------------------------
+  // HTMLの終了タグを自動で閉じる
+  "html.autoClosingTags": true,
+  // class名のコード補完
+  "html-css-class-completion.enableEmmetSupport": true,
+  // タグ内の記述はフォーマットしない
+  "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p, a, img",
+  // head, body, /html タグの前に改行を入れない
+  "html.format.extraLiners": "",
+  // 保存時に空行の自動削除
+  "html.format.preserveNewLines": false,
+  // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない
+  "html.format.unformatted": null,
+  // head, bodyをインデント追加
+  "html.format.indentInnerHtml": true,
+  // 行の文字数制限を無くし自動で改行させない
+  "html.format.wrapLineLength": 0,
+  // ------------------------------------
+  // PHP
+  // ------------------------------------
+  // サジェスト機能を有効にする
+  "php.suggest.basic": true,
+  // バリデーターを有効にする
+  "php.validate.enable": true,
+  "phpserver.port": 8888,
+  "phpserver.relativePath": "practice",
+  // ------------------------------------
+  // php-cs-fixer
+  // ------------------------------------
+  // 設定可能ファイル
+  "php-cs-fixer.config": "${workspaceFolder}/practice/.php-cs-fixer.dist.php;",
+  // 機能ファイルの読み込み
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  // 整形時にHTMLも併せて実行
+  "php-cs-fixer.formatHtml": true,
+  // 最後のダウンロードのタイムスタンプ
+  "php-cs-fixer.lastDownload": 1700233312597,
+  // 保存時に整形を実行
+  "php-cs-fixer.onsave": false,
+  // 整形基準
+  "php-cs-fixer.rules": "@PSR2",
+  // ------------------------------------
+  // intelephense
+  // ------------------------------------
+  "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true, // 補完:グローバルな定数や関数をフルサポート
+  // 補完:定義使用時に挿入
+  "intelephense.completion.insertUseDeclaration": true,
+  // 補完:トリガーのパラメータヒント
+  "intelephense.completion.triggerParameterHints": true,
+  // 検証:未定義のクラス定数
+  "intelephense.diagnostics.undefinedClassConstants": false,
+  // 検証:未定義の定数
+  "intelephense.diagnostics.undefinedConstants": false,
+  // 検証:未定義の関数
+  "intelephense.diagnostics.undefinedFunctions": false,
+  // 検証:未定義のメソッド
+  "intelephense.diagnostics.undefinedMethods": false,
+  // 検証:定義済みプロパティ
+  "intelephense.diagnostics.undefinedProperties": false,
+  // 検証:未定義の型
+  "intelephense.diagnostics.undefinedTypes": false,
+  // 整形フォーマットの有効化
+  "intelephense.format.enable": true,
+  // 遠隔測定の有効化
+  "intelephense.telemetry.enabled": false,
+  // サーバーのトレース
+  "intelephense.trace.server": "messages",
+  // フォーマット上で認識可能な用語
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "FFI",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "meta",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pdo_ibm",
+    "pdo_mysql",
+    "pdo_pgsql",
+    "pdo_sqlite",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib",
+    "Swift_Message",
+    "Validator",
+    "Route"
+  ],
+  // フォーマットの除外対象
+  "intelephense.files.exclude": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/CVS/**",
+    "**/.DS_Store/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/storage",
+    "**/storage/**",
+    "**/tests/**",
+    "**/resources/views/**",
+    "**/database/migrations/**",
+    "**/storage/framework/views/**",
+    "_ide_helper.php",
+    "_ide_helper_models"
+  ],
+  // ------------------------------------
+  // Git
+  // ------------------------------------
+  // gitの有効化
+  "git.enabled": true,
+  // 自動更新有効化
+  "git.autorefresh": true,
+  // 自動フェッチ有効化
+  "git.autofetch": false,
+  // リポジトリを同期する前に確認
+  "git.confirmSync": false,
+  // 変更がない場合はすべての変更をコミット
+  "git.enableSmartCommit": true,
+  // ------------------------------------
+  // エメット
+  // ------------------------------------
+  // emmetのHTMLをフロントエンドで機能
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+  },
+  // emmetの候補を表示
+  "emmet.showSuggestionsAsSnippets": true,
+  // emmetのクォート記号
+  "emmet.syntaxProfiles": {
+    "html": {
+      "attr_quotes": "double",
+      "tag_nl": true
+    },
+    "jsx": {
+      "self_closing_tag": true
+    }
+  },
+  // TABキーでemmetを展開できるようにする
+  "emmet.triggerExpansionOnTab": true,
+  // emmetで展開される HTML の言語を変更
+  "emmet.variables": {
+    "lang": "ja"
+  },
+  // ====================================
+  // 検索設定
+  // ====================================
+  // 検索対象外にするファイル設定（files.exclude のファイルも含む）
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/tmp": true,
+    "**/.DS_Store": true,
+    "**/.expo": true,
+    "**/.expo-shared": true,
+    "**/.git": true,
+    "**/.history": true,
+    "**/.idea": true,
+    "**/.settings": true,
+    "**/.vscode": true
+  },
+  // 検索結果ごとに記述箇所の行番号を表示
+  "search.showLineNumbers": true,
+  // ====================================
+  // その他の設定
+  // ====================================
+  // VSCodeの制限モード
+  "security.workspace.trust.untrustedFiles": "open",
+  // 空フォルダがある場合、コンパクト形式で表示する
+  "explorer.compactFolders": false,
+  // ファイル削除時の確認表示
+  "explorer.confirmDelete": false,
+  // フォルダ移動時の確認表示
+  "explorer.confirmDragAndDrop": false,
+  // インデントの自動検出を設定する
+  "editor.detectIndentation": false,
+  // インデントを空白（半角スペース）に設定する
+  "editor.insertSpaces": true,
+  // 選択行を行番号含めすべてハイライト
+  "editor.renderLineHighlight": "all",
+  // 選択範囲がないときカーソル行をコピーする
+  "editor.emptySelectionClipboard": true,
+  // ツールチップの表示
+  "editor.hover.enabled": false,
+  // テキストリンクのクリック可能化
+  "editor.links": true,
+  // マウスでの複数選択時の修飾キーを変更
+  "editor.multiCursorModifier": "ctrlCmd",
+  // 区切り文字（単語の境界文字）を設定する
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  // 制御文字を表示
+  "editor.renderControlCharacters": true,
+  // タブキーで補助ウィンドウを表示
+  "editor.tabCompletion": "onlySnippets",
+  // スニペットのサジェスト位置を設定する
+  "editor.snippetSuggestions": "top",
+  // サジェストの文字サイズ
+  "editor.suggestFontSize": 16,
+  // サジェスト欄の行の高さ
+  "editor.suggestLineHeight": 18,
+  // 補完候補の自動決定
+  "editor.quickSuggestions": {
+    // コメント内で無効
+    "other": false,
+    // 文字列内で無効
+    "comments": false,
+    // その他の場所で無効
+    "strings": false
+  },
+  // コード補完の表示までのミリ秒
+  "editor.quickSuggestionsDelay": 100,
+  // 小文字検索の場合、大文字と小文字を区別せずに検索し、それ以外の場合は区別して検索する（ファイル検索のみに適用）
+  "search.smartCase": true,
+  // ====================================
+  // 拡張機能の設定
+  // ====================================
+  // 拡張機能を自動更新
+  "extensions.autoUpdate": true,
+  // 拡張機能のレコメンドを非表示
+  "extensions.ignoreRecommendations": true,
+  // ------------------------------------
+  // indent-rainbow
+  // ------------------------------------
+  // インデントカラー
+  "indentRainbow.colors": [
+    "rgba(153, 40, 57, 0.24)",
+    "rgba(111, 115, 30, 0.24)",
+    "rgba(30, 115, 102, 0.24)",
+    "rgba(85, 30, 115, 0.24)"
+  ],
+  // ------------------------------------
+  // Live Server
+  // ------------------------------------
+  // 起動時、IPアドレスをローカルIP形式に変更する
+  "liveServer.settings.useLocalIp": true,
+  // 起動できなかった場合、ポップアップメッセージを非表示にする
+  "liveServer.settings.donotShowInfoMsg": true,
+  // 起動時、HTMLファイル上にタグがない場合のエラーメッセージを非表示にする
+  "liveServer.settings.donotVerifyTags": true,
+  // ライブサーバの初期ブラウザ
+  "liveServer.settings.CustomBrowser": "chrome",
+  // ------------------------------------
+  // CodeSnap
+  // ------------------------------------
+  // 背景色
+  "codesnap.backgroundColor": "#70cdc9",
+  // エディタの影
+  "codesnap.boxShadow": "rgba(0, 0, 0, 0.2) 0px 20px 100px",
+  // エディタの行番号表示
+  "codesnap.showLineNumbers": false,
+  // シャッターボタン機能設定
+  "codesnap.shutterAction": "copy",
+  // ------------------------------------
+  // Insert <br> Tag
+  // ------------------------------------
+  "insert-br-tag.enableOnLanguage": [
+    // 任意の言語で有効化する
+    "html",
+    "php",
+  ],
+  // ------------------------------------
+  // Code Spell Checker
+  // ------------------------------------
+  // 単語登録（VScode全体に適用）
+  "cSpell.userWords": [
+    "hoge",
+    "fuga",
+    "piyo"
+  ],
+  "cSpell.ignorePaths": [
+    "**/package-lock.json",
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/.git/objects/**",
+    ".vscode",
+    ".vscode-insiders",
+    "**/settings.json",
+  ],
+  // ------------------------------------
+  // phpcbf
+  // ------------------------------------
+  // パスの登録
+  "phpcbf.executablePath": "phpcbf.bat",
+  // 保存時、PHPのコードを整形する
+  "phpcbf.onsave": true,
+  // 標準コーディングルールを設定する
+  "phpcbf.standard": "WordPress",
+}
