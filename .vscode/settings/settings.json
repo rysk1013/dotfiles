@@ -239,7 +239,13 @@
   // テーマカラーの配色を上書きする
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#BCBABE",
-    "terminalCursor.foreground": "#BCBABE"
+    "terminalCursor.foreground": "#BCBABE",
+    // フォルダを開く前のステータスバーの色
+    "statusBar.noFolderBackground": "#333333",
+    // フォルダを開いたときのステータスバーの色
+    "statusBar.background": "#004674",
+    // フォルダを開いたときのステータスバーの上線の色
+    "statusBar.border": "#2e2e2e",
   },
   // ====================================
   // フォーマッターとコード整形に関する設定
