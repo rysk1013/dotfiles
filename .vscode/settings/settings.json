@@ -220,7 +220,7 @@
   // ターミナルの行間
   "terminal.integrated.lineHeight": 1.25,
   // 新規ターミナル画面の表示位置
-  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.defaultLocation": "view",
   // ターミナルに外部ツールも統合
   "terminal.explorerKind": "external",
   // 範囲選択してコピー
