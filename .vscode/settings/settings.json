@@ -369,7 +369,8 @@
   // ------------------------------------
   // intelephense
   // ------------------------------------
-  "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true, // 補完:グローバルな定数や関数をフルサポート
+  // 補完:グローバルな定数や関数をフルサポート
+  "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
   // 補完:定義使用時に挿入
   "intelephense.completion.insertUseDeclaration": true,
   // 補完:トリガーのパラメータヒント
