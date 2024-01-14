@@ -2,13 +2,11 @@
   // ====================================
   // windows設定
   // ====================================
-  // PowerShellをgitbashに変更
-  "sync.gist": "eac7f5e1f4792ceff16056449bdf06ee",
   //コンソールで使用するbashの階層
   "terminal.external.windowsExec": "/usr/bin/bash",
   // GitBashの読み込む階層
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-  // 既定のターミナル設定
+  // デフォルトのターミナルをGit Bashに変更
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   // PHPプログラムの読み込む階層
   "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
