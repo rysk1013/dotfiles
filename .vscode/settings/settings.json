@@ -66,6 +66,17 @@
   "workbench.editor.tabSizing": "shrink",
   // ツリーのインデントガイドを表示する
   "workbench.tree.renderIndentGuides": "always",
+  // テーマカラーの配色を上書きする
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#BCBABE",
+    "terminalCursor.foreground": "#BCBABE",
+    // フォルダを開く前のステータスバーの色
+    "statusBar.noFolderBackground": "#333333",
+    // フォルダを開いたときのステータスバーの色
+    "statusBar.background": "#004674",
+    // フォルダを開いたときのステータスバーの上線の色
+    "statusBar.border": "#2e2e2e",
+  },
   // ====================================
   // エディタのUIに関する詳細設定
   // ====================================
@@ -93,6 +104,10 @@
   "editor.wordWrap": "off",
   // 折り返し行にインデント追加
   "editor.wrappingIndent": "indent",
+  // エディタのキャレットの幅
+  "editor.cursorWidth": 2,
+  // エディタのキャレットアニメーション
+  "editor.cursorBlinking": "smooth",
   // ====================================
   // エディタのタイポグラフィーに関する設定
   // ====================================
@@ -223,28 +238,10 @@
   "terminal.explorerKind": "external",
   // 範囲選択してコピー
   "terminal.integrated.copyOnSelection": true,
-  // ====================================
-  // キャレットの設定
-  // ====================================
-  // エディタのキャレットの幅
-  "editor.cursorWidth": 2,
-  // エディタのキャレットアニメーション
-  "editor.cursorBlinking": "smooth",
   // ターミナルのキャレットのスタイル
   "terminal.integrated.cursorStyle": "block",
   // ターミナルのキャレットアニメーション
   "terminal.integrated.cursorBlinking": true,
-  // テーマカラーの配色を上書きする
-  "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#BCBABE",
-    "terminalCursor.foreground": "#BCBABE",
-    // フォルダを開く前のステータスバーの色
-    "statusBar.noFolderBackground": "#333333",
-    // フォルダを開いたときのステータスバーの色
-    "statusBar.background": "#004674",
-    // フォルダを開いたときのステータスバーの上線の色
-    "statusBar.border": "#2e2e2e",
-  },
   // ====================================
   // フォーマッターとコード整形に関する設定
   // ====================================
