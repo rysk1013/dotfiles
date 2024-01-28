@@ -56,6 +56,7 @@ extensions=(
   'arjun.swagger-viewer'
   'shardulm94.trailing-spaces'
   'mosapride.zenkaku'
+  'wayou.vscode-todo-highlight'
 )
 
 for extension in "${extensions[@]}"; do
