@@ -58,6 +58,6 @@ extensions=(
   'mosapride.zenkaku'
 )
 
-for extension in ${extensions[@]} do
+for extension in "${extensions[@]}"; do
   code --install-extension $extension --force
 done
