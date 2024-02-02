@@ -54,6 +54,7 @@ $extensions = @(
   'arjun.swagger-viewer'
   'shardulm94.trailing-spaces'
   'mosapride.zenkaku'
+  'wayou.vscode-todo-highlight'
 )
 
 # カレントにパスが通っていない場合は通す
