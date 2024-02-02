@@ -362,7 +362,7 @@
   // 整形基準
   "php-cs-fixer.rules": "@PSR2",
   // ------------------------------------
-  // intelephense
+  // PHP intelephense
   // ------------------------------------
   // 補完:グローバルな定数や関数をフルサポート
   "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
@@ -370,15 +370,17 @@
   "intelephense.completion.insertUseDeclaration": true,
   // 補完:トリガーのパラメータヒント
   "intelephense.completion.triggerParameterHints": true,
+  // 検証:型エラーチェック
+  "intelephense.diagnostics.typeErrors": false,
   // 検証:未定義のクラス定数
-  "intelephense.diagnostics.undefinedClassConstants": false,
+  "intelephense.diagnostics.undefinedClassConstants": true,
   // 検証:未定義の定数
-  "intelephense.diagnostics.undefinedConstants": false,
+  "intelephense.diagnostics.undefinedConstants": true,
   // 検証:未定義の関数
-  "intelephense.diagnostics.undefinedFunctions": false,
+  "intelephense.diagnostics.undefinedFunctions": true,
   // 検証:未定義のメソッド
-  "intelephense.diagnostics.undefinedMethods": false,
-  // 検証:定義済みプロパティ
+  "intelephense.diagnostics.undefinedMethods": true,
+  // 検証:未定義のプロパティ
   "intelephense.diagnostics.undefinedProperties": false,
   // 検証:未定義の型
   "intelephense.diagnostics.undefinedTypes": false,
