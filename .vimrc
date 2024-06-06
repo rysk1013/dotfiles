@@ -8,4 +8,5 @@ set number
 set smartindent
 "オートインデント"
 set autoindent
-
+"クリップボードと連携"
+set clipboard=unnamedplus
