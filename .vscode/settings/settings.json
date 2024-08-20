@@ -64,6 +64,8 @@
   "workbench.editor.openPositioning": "last",
   // タブの表示幅を狭めて少し重ねる
   "workbench.editor.tabSizing": "shrink",
+  // タブを多段表示する
+  "workbench.editor.wrapTabs": true,
   // ツリーのインデントガイドを表示する
   "workbench.tree.renderIndentGuides": "always",
   // テーマカラーの配色を上書きする
