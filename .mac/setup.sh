@@ -8,18 +8,8 @@ defaults write -g InitialKeyRepeat -int 11
 defaults write -g KeyRepeat -int 1
 
 # アプリインストール
-# ブラウザ
-brew install --cask google-chrome
-brew install --cask brave-browser
 # 入力
 brew install --cask google-japanese-ime
-# エディタ
-brew install --cask visual-studio-code
-brew install --cask visual-studio-code@insiders
-# メモ
-brew install --cask notion
-# ビデオミーティング
-brew install --cask zoom
 # タッチパッドカスタマイズ
 brew install --cask bettertouchtool
 # キーボードカスタマイズ
@@ -28,9 +18,19 @@ brew install --cask karabiner-elements
 brew install --cask appcleaner
 # ランチャー
 brew install --cask raycast
+# ブラウザ
+brew install --cask google-chrome
+brew install --cask brave-browser
+# エディタ
+brew install --cask visual-studio-code
+brew install --cask visual-studio-code@insiders
+# メモ
+brew install --cask notion
+# ビデオミーティング
+brew install --cask zoom
 # vpn
 brew install --cask protonvpn
-# パスワード管理
+# パスワードマネージャ
 brew install --cask bitwarden
 
 # Apple StoreのアプリをCLIで管理
