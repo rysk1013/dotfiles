@@ -575,8 +575,6 @@
   "editor.renderLineHighlight": "all",
   // 選択範囲がないときカーソル行をコピーする
   "editor.emptySelectionClipboard": true,
-  // ツールチップの表示
-  "editor.hover.enabled": false,
   // テキストリンクのクリック可能化
   "editor.links": true,
   // マウスでの複数選択時の修飾キーを変更
