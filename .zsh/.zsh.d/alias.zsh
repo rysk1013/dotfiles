@@ -1,6 +1,6 @@
 # zshrc
 alias zshrc="code ~/.zshrc"
-alias zshrci="code insider ~/.zshrc"
+alias zshrci="code-insiders ~/.zshrc"
 alias rezshrc="source ~/.zshrc"
 
 # ディレクトリ詳細確認
