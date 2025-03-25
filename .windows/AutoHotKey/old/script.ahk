@@ -32,7 +32,7 @@ F13 & M::Send,!{Home}
 
 ; Raptureの起動・終了
 ; Alt+QにRaptureの呼び出し割り当て
-!q::run "C:\Users\0829r\AppData\Local\rapture-2.4.1\rapture.exe"
+!q::run "C:\Users\{user name}\AppData\Local\rapture-2.4.1\rapture.exe"
 Return
 
 ; Raptureが起動している間、Escを2回押したら無効化する
@@ -51,4 +51,4 @@ Return
 ^+E::Run C:\Program Files\Everything\Everything.exe
 
 ; PatchMyPCの起動
-; ^+P::Run C:\Users\0829r\PatchMyPC\patch-my-pc-4-5-0-4.exe
+; ^+P::Run C:\Users\{user name}\PatchMyPC\patch-my-pc-4-5-0-4.exe
