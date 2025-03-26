@@ -11,7 +11,7 @@ F13 & K::Send,{Blind}{Up}
 F13 & J::Send,{Blind}{Down}
 
 ; move home screen
-F13 & M::Send,!{Home}
+^+H::Send,!{Home}
 
 ; bitwarden(shift + F13 + B)
 F13 & B::
@@ -27,6 +27,10 @@ return
 
 ; docker
 F13 & D::Run "C:\Program Files\Docker\Docker\frontend\Docker Desktop.exe"
+return
+
+; monitoring
+F13 & M::Run "C:\Users\{user name}\Akabei Monitor\akamoni.exe"
 return
 
 ; notion
