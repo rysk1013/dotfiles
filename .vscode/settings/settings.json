@@ -580,7 +580,7 @@
   // マウスでの複数選択時の修飾キーを変更
   "editor.multiCursorModifier": "ctrlCmd",
   // 区切り文字（単語の境界文字）を設定する
-  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.wordSeparators": "`!@#$%^&*()=-~+[{]}\\|;:'\",.<>/?",
   // 制御文字を表示
   "editor.renderControlCharacters": true,
   // タブキーで補助ウィンドウを表示
