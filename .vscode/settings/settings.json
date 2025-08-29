@@ -252,6 +252,10 @@
   "terminal.integrated.cursorStyle": "block",
   // ターミナルのキャレットアニメーション
   "terminal.integrated.cursorBlinking": true,
+  // ターミナルのスクロールバック行数
+  "terminal.integrated.scrollback": 10000,
+  // ターミナルのスティッキースクロール
+  "terminal.integrated.stickyScroll.enabled": false,
   // ====================================
   // フォーマッターとコード整形に関する設定
   // ====================================
@@ -678,4 +682,17 @@
   "phpcbf.onsave": true,
   // 標準コーディングルールを設定する
   "phpcbf.standard": "WordPress",
+  // ------------------------------------
+  // github-copilot
+  // ------------------------------------
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  // ------------------------------------
+  // others
+  // ------------------------------------
 }
