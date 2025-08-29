@@ -255,7 +255,7 @@
   // ターミナルのスクロールバック行数
   "terminal.integrated.scrollback": 10000,
   // ターミナルのスティッキースクロール
-  "terminal.integrated.stickyScroll.enabled": false,
+  // "terminal.integrated.stickyScroll.enabled": false,
   // ====================================
   // フォーマッターとコード整形に関する設定
   // ====================================
