@@ -1,28 +1,49 @@
-# Bash起動時にファイルを読み込む
-if [[ -f ~/.bashrc ]] ; then
-    . ~/.bashrc
-fi
+#  設定
+bind 'set completion-ignore-case on'
+bind 'set show-all-if-ambiguous on'
+bind 'set bell-style none'
+bind 'set horizontal-scroll-mode Off'
+bind 'set mark-symlinked-directories on'
+bind 'set skip-completed-text on'
+bind 'set menu-complete-display-prefix on'
+bind 'TAB:menu-complete'
 
-# 設定ファイル
-# VScodeで開く
+# windowsターミナルの日本語文字化け解消
+export LANG=ja_JP.UTF-8
+
+# 保存する履歴の行数
+export HISTSIZE=10000
+
+# 履歴ファイルのサイズ
+export HISTFILESIZE=10000
+
+# 履歴を追記する
+shopt -s histappend
+PROMPT_COMMAND='history -a'
+
+# エイリアス
+# 履歴表示
+alias hist='history'
+
+# .bashrcを開く（VScode）
 alias bashrc="code ~/.bashrc"
 
-#VScode-insidersで開く
+# .bashrcを開く（VScode-insiders）
 alias cibashrc="code-insiders ~/.bashrc"
 
-# 共通
+# code-insidersでファイルを開く
+alias ci='code-insiders'
+
+# 変更反映
 alias rebashrc="source ~/.bashrc"
 
 # ターミナルの再起動
 alias restart="exec $SHELL -l"
 
-# windowsターミナルの日本語文字化け解消
-export LANG=ja_JP.UTF-8
-
 # ディレクトリ確認
 alias ll='ls -alF'
 
-#階層移動
+# 階層移動
 alias ..='cd ../'
 alias ....='cd ../..'
 alias ......='cd ../../..'
@@ -32,16 +53,13 @@ alias desk='cd ~/Desktop'
 # ディレクトリの作成と移動を同時実行
 function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
-#階層表示
+# 階層表示
 alias tree1='tree -L 1'
 alias tree2='tree -L 2'
 alias tree3='tree -L 3'
 
 # 容量確認
 alias w='du -h -s'
-
-# VScode-insidersでファイルを開く
-alias ci='code-insiders'
 
 # ファイル検索
 alias fn='find . -name'
@@ -132,7 +150,7 @@ alias gign='touch .gitignore | echo "/node_modules/*\n.envrc" > .gitignore' #nod
 alias gbsr='git browse-remote' #現在のブランチをGithub上のブラウザで表示
 alias gbsrp='git browse-remote -pr' #現在のプルリクをGithub上のブラウザで表示
 
-#Laravel
+# Laravel
 alias pa='php artisan' #artisanコマンド
 alias pav='php artisan --version'
 alias pas='php artisan serve'
