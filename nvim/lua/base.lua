@@ -1,0 +1,17 @@
+vim.o.encoding = 'utf-8'        -- 文字コードをUTF-8に設定
+vim.o.number = true             -- 行番号を表示
+vim.o.smartindent = true        -- 自動インデントをスマートに行う
+vim.o.clipboard = "unnamedplus" -- システムクリップボードと連携
+vim.o.list = true               -- タブやスペースなどの不可視文字を表示
+vim.o.expandtab = true          -- タブ入力時にスペースに変換
+vim.o.tabstop = 2               -- タブ幅を2文字分に設定
+vim.o.shiftwidth = 2            -- 自動インデントのスペース幅を2に設定
+vim.o.wrap = false              -- 行の折り返しを無効化
+vim.o.termguicolors = true      -- True Color（24bitカラー）を有効化
+vim.o.wildmenu = true           -- コマンドライン補完メニューを有効化
+vim.o.ruler = true              -- カーソル位置を右下に表示
+vim.o.smartcase = true          -- 検索時、大文字を含む場合は大文字小文字を区別
+vim.o.showmatch = true          -- 対応する括弧を表示
+vim.g.mapleader = ' '           -- Leaderキーをスペースに設定
+vim.g.maplocalleader = "\\"     -- ローカルLeaderキーをバックスラッシュに設定
+vim.opt.splitright = true       -- 垂直分割時に右側に新しいウィンドウを開く
