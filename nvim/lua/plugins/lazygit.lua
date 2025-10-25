@@ -27,7 +27,6 @@ return {
 			callback = function(ev)
 				local opts = { noremap = true, silent = true, buffer = ev.buf }
 				vim.keymap.set("t", "<Esc>", "<cmd>close<CR>", opts)
-				vim.keymap.set("t", "q", "<cmd>close<CR>", opts)
 			end,
 			desc = "LazyGit: close with <Esc> or q",
 		})
