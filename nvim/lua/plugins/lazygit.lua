@@ -4,17 +4,43 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 	},
-  -- keymaps
 	keys = {
 		{ "<leader>gg", "<cmd>LazyGit<cr>", desc = "Open LazyGit" },
 	},
 	config = function()
-		-- LazyGit をフローティングウィンドウで表示する設定（任意）
-		vim.g.lazygit_floating_window_winblend = 0 -- 透明度
+		------------------------------------------------------------
+		-- LazyGit のフロート表示設定（任意）
+		------------------------------------------------------------
+		vim.g.lazygit_floating_window_winblend = 0       -- 透明度
 		vim.g.lazygit_floating_window_scaling_factor = 0.9 -- サイズ縮小率
 		-- vim.g.lazygit_floating_window_border_chars = { "╭", "╮", "╯", "╰", "│", "─", "│", "│" }
 
 		-- git config 連携（optional）
 		vim.g.lazygit_use_neovim_remote = 1
+
+		------------------------------------------------------------
+		-- <Esc> / q で LazyGit を閉じる処理
+		------------------------------------------------------------
+		-- LazyGit は filetype = "lazygit" の terminal buffer を使用する
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = "lazygit",
+			callback = function(ev)
+				local opts = { noremap = true, silent = true, buffer = ev.buf }
+				vim.keymap.set("t", "<Esc>", "<cmd>close<CR>", opts)
+				vim.keymap.set("t", "q", "<cmd>close<CR>", opts)
+			end,
+			desc = "LazyGit: close with <Esc> or q",
+		})
+
+		-- 念のため TermOpen 側でも設定（環境によって filetype イベントが遅れる場合あり）
+		vim.api.nvim_create_autocmd("TermOpen", {
+			pattern = "term://*lazygit*",
+			callback = function(ev)
+				local opts = { noremap = true, silent = true, buffer = ev.buf }
+				vim.keymap.set("t", "<Esc>", "<cmd>close<CR>", opts)
+				vim.keymap.set("t", "q", "<cmd>close<CR>", opts)
+			end,
+			desc = "LazyGit(term): close with <Esc> or q",
+		})
 	end,
 }
