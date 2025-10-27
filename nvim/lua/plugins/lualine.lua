@@ -28,7 +28,12 @@ return {
         sections = {
           lualine_a = { "mode" },
           lualine_b = { "branch", "diff", "diagnostics" },
-          lualine_c = { "filename" },
+          lualine_c = {
+            {
+              "filename",
+              path = 3, -- "0: ファイル名のみ" / "1: 相対パス" / "2: 絶対パス" / "3: ホームを `~` に短縮したパス"
+            },
+          },
           lualine_x = { "encoding", custom_fileformat, "filetype" },
           lualine_y = { "progress" },
           lualine_z = { "location" },
