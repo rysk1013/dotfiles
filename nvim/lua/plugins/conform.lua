@@ -16,7 +16,7 @@ return {
 			python = { "black" },
 			sql = { "sqlfluff" },
 		},
-		format_on_save = false, -- 明示的に手動トリガ
+		format_on_save = true,
 	},
 	config = function(_, opts)
 		require("conform").setup(opts)
