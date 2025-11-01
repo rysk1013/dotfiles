@@ -2,7 +2,7 @@ return {
 	"akinsho/bufferline.nvim",
 	version = "*",
 	event = "BufAdd",
-	dependencies = { "nvim-tree/nvim-web-devicons" }, -- アイコンは使わないが依存でOK
+	dependencies = { "nvim-tree/nvim-web-devicons" }, -- アイコンは使わなくても依存でOK
 	config = function()
 		local ok, bufferline = pcall(require, "bufferline")
 		if not ok then
@@ -14,27 +14,36 @@ return {
 				mode = "buffers",
 				numbers = "none",
 				diagnostics = "nvim_lsp",
-				show_buffer_icons = false, -- ← アイコン非表示
+				show_buffer_icons = false, -- ← ファイルアイコン非表示
 				color_icons = false,
-				show_buffer_close_icons = true, -- ← 各タブの×は表示
-				show_close_icon = false, -- 右端の×は非表示
+				show_buffer_close_icons = true, -- ← 各タブの × を表示
+				show_close_icon = false, -- 右端の全体 × は非表示
 				separator_style = "thin",
 				always_show_bufferline = true,
 				indicator = { style = "underline" },
+
+				-- NvimTree 連携：ツリー分のオフセットを自動で空ける
 				offsets = {
-					{ filetype = "NvimTree", text = "File Explorer", highlight = "Directory", separator = true },
+					{
+						filetype = "NvimTree",
+						text = "File Explorer",
+						highlight = "Directory",
+						separator = true, -- 仕切り線を表示
+					},
 				},
+
+				-- 20文字超は省略、未保存は ● を先頭に付ける
 				max_name_length = 20,
 				truncate_names = true,
-				modified_icon = "●", -- フォールバック
-				-- 未保存時はファイル名の前に ● を付与
+				modified_icon = "●",
 				name_formatter = function(buf)
 					local name = buf.name ~= "" and vim.fn.fnamemodify(buf.name, ":t") or "[No Name]"
 					return buf.modified and ("● " .. name) or name
 				end,
 			},
+
+			-- 視認性重視の配色例
 			highlights = {
-				-- 視認性重視（アクティブを明色、非アクティブを暗色）
 				fill = { bg = "#181825" },
 				background = { fg = "#a6adc8", bg = "#1e1e2e" },
 				buffer_visible = { fg = "#a6adc8", bg = "#1e1e2e" },
@@ -55,21 +64,24 @@ return {
 			vim.keymap.set("n", lhs, rhs, { silent = true, desc = desc })
 		end
 
-		-- 次のタブへ / 前のタブへ
+		-- 次/前へ移動（Mac風）
 		map("<S-l>", ":BufferLineCycleNext<CR>", "Next buffer")
 		map("<S-h>", ":BufferLineCyclePrev<CR>", "Prev buffer")
-		-- タブを右へ移動 / 左へ移動
+
+		-- タブの並び替え（Alt + h/l）
 		map("<A-l>", ":BufferLineMoveNext<CR>", "Move buffer right")
 		map("<A-h>", ":BufferLineMovePrev<CR>", "Move buffer left")
+
 		-- 番号で移動（<leader>1~9）
 		for i = 1, 9 do
 			map(("<leader>%d"):format(i), (":BufferLineGoToBuffer %d<CR>"):format(i), ("Go to buffer %d"):format(i))
 		end
-		-- ピック移動
+
+		-- ピック移動/ピック閉じる
 		map("<leader>bp", ":BufferLinePick<CR>", "Pick buffer")
-		-- 閉じる
-		map("<leader>q", ":bdelete<CR>", "Close current buffer")
-		-- ピック閉じる
 		map("<leader>x", ":BufferLinePickClose<CR>", "Pick buffer to close")
+
+		-- 現在バッファを閉じる
+		map("<leader>q", ":bdelete<CR>", "Close current buffer")
 	end,
 }
