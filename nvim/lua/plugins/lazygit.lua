@@ -46,5 +46,22 @@ return {
 				gs.refresh()
 			end
 		end
+
+		-- LazyGit 終了時に NvimTree を更新
+		vim.api.nvim_create_autocmd("User", {
+			pattern = "LazyGitExit",
+			callback = function()
+				-- 外部変更をチェック（stash/reset/rebase 対応）
+				pcall(vim.cmd, "checktime")
+
+				-- NvimTree の再読み込み
+				local ok, api = pcall(require, "nvim-tree.api")
+				if ok then
+					pcall(api.tree.reload)
+					pcall(vim.cmd, "redraw!") -- 画面反映
+				end
+			end,
+			desc = "Auto refresh NvimTree after LazyGit commit/exit",
+		})
 	end,
 }
