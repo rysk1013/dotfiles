@@ -1,0 +1,72 @@
+format = """
+[░▒▓](#a9b1d6)\
+$os\
+$username\
+[](fg:#a9b1d6 bg:#7aa2f7)\
+$directory\
+[](fg:#7aa2f7 bg:#394260)\
+$git_branch\
+$git_status\
+[](fg:#394260 bg:#2b3246)\
+$php\
+$nodejs\
+$golang\
+[](fg:#2b3246 bg:#1d2230)\
+$time\
+[](fg:#1d2230)\
+\n$character
+"""
+
+[os]
+style = "fg:#090c0c bg:#a9b1d6"
+format = '[$symbol]($style)'
+disabled = false
+
+[os.symbols]
+Macos = " "
+
+[username]
+show_always = true
+style_user = "fg:#090c0c bg:#a9b1d6"
+style_root = "fg:#090c0c bg:#a9b1d6"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:#e3e5e5 bg:#7aa2f7"
+format = '[ $path ]($style)'
+truncation_length = 1000
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+style = "fg:#769ff0 bg:#394260"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "fg:#769ff0 bg:#394260"
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+[php]
+symbol = ""
+style = "fg:#9ff076 bg:#2b3246"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = ""
+style = "fg:#9ff076 bg:#2b3246"
+format = '[ $symbol ($version) ]($style)'
+
+[golang]
+symbol = "󰟓"
+style = "fg:#9ff076 bg:#2b3246"
+format = '[ $symbol ($version) ]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:#a0a9cb bg:#221d30"
+format = '[  $time ]($style)'
+
+[character]
+success_symbol = "[❯](bold #00ff00)"
+error_symbol = "[❯](bold #FF0000)"
