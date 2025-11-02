@@ -19,11 +19,11 @@ $time\
 
 [os]
 style = "fg:#090c0c bg:#a9b1d6"
-format = '[$symbol]($style)'
+format = ' [$symbol]($style)'
 disabled = false
 
 [os.symbols]
-Macos = " "
+Macos = ""
 
 [username]
 show_always = true
