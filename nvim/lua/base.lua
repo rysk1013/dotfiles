@@ -16,10 +16,10 @@ vim.g.mapleader = " " -- Leaderキーをスペースに設定
 vim.g.maplocalleader = "\\" -- ローカルLeaderキーをバックスラッシュに設定
 vim.opt.splitright = true -- 垂直分割時に右側に新しいウィンドウを開く
 vim.cmd([[
-inoremap ( ()<Left>
-inoremap [ []<Left>
-inoremap { {}<Left>
-inoremap " ""<Left>
-inoremap ' ''<Left>
-inoremap ` ``<Left>
+  inoremap ( ()<Left>
+  inoremap [ []<Left>
+  inoremap { {}<Left>
+  inoremap " ""<Left>
+  inoremap ' ''<Left>
+  inoremap ` ``<Left>
 ]])
