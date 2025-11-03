@@ -1,152 +1,186 @@
-# Neovim Keymap Cheat Sheet
+# Keymaps
 
-## which-key
+## Bufferline
 
-| キー                 | アクション                               |
-|----------------------|------------------------------------------|
-| `<leader>wk`         | which-key メニューを手動で開く           |
-| `<leader>?`          | which-key メニューを手動で開く（同義）   |
-| `<C-Space>`          | どのモードでも which-key を手動で開く    |
-| `:WhichKey <leader>` | Leader配下をコマンドで開く               |
-| `:WhichKeyPrefix`    | 任意プレフィックスを入力してメニュー表示 |
+| キー                    | コマンド                    | 説明                                   |
+|-------------------------|-----------------------------|----------------------------------------|
+| `Shift + l`             | `:BufferLineCycleNext`      | 次のバッファへ移動（Mac風）            |
+| `Shift + h`             | `:BufferLineCyclePrev`      | 前のバッファへ移動（Mac風）            |
+| `Alt + l`               | `:BufferLineMoveNext`       | 現在のバッファを右へ移動               |
+| `Alt + h`               | `:BufferLineMovePrev`       | 現在のバッファを左へ移動               |
+| `<leader>1`~`<leader>9` | `:BufferLineGoToBuffer 1~9` | 指定番号のバッファへジャンプ           |
+| `<leader>bp`            | `:BufferLinePick`           | バッファをピックして移動（文字で選択） |
+| `<leader>x`             | `:BufferLinePickClose`      | バッファをピックして閉じる             |
+| `<leader>q`             | `:bdelete`                  | 現在のバッファを閉じる                 |
 
----
+## Cmp
 
-## ファイル / 検索（Telescope）
+| キー           | コマンド                                 | 説明                       |
+|----------------|------------------------------------------|----------------------------|
+| `Ctrl + n`     | `cmp.mapping.select_next_item()`         | 次の補完候補を選択         |
+| `Ctrl + p`     | `cmp.mapping.select_prev_item()`         | 前の補完候補を選択         |
+| `Ctrl + y`     | `cmp.mapping.confirm({ select = true })` | 補完を確定（Enter の代替） |
+| `Ctrl + e`     | `cmp.mapping.abort()`                    | 補完をキャンセル           |
+| `Ctrl + Space` | `cmp.mapping.complete()`                 | 手動で補完を呼び出す       |
 
-| キー          | アクション               | プラグイン      |
-|---------------|--------------------------|-----------------|
-| `<leader>ff`  | ファイル検索             | Telescope       |
-| `<leader>fg`  | 文字列検索（live grep）  | Telescope       |
-| `<leader>fb`  | バッファ一覧             | Telescope       |
-| `<leader>fh`  | ヘルプ検索               | Telescope       |
-| `<leader>fs`  | ドキュメントシンボル検索 | Telescope + LSP |
-| `<leader>frf` | 最近開いたファイル       | Telescope       |
-| `<leader>frr` | LSP 参照一覧             | Telescope       |
+## Conform
 
----
+| キー        | コマンド                                                                               | 説明                                   |
+|-------------|----------------------------------------------------------------------------------------|----------------------------------------|
+| `<leader>F` | `require("conform").format({ lsp_fallback = true, async = false, timeout_ms = 3000 })` | 手動でコードを整形（フォーマット）する |
 
-## LSP / 開発補助
+## CopilotChat
 
-| キー               | アクション                 |
-|--------------------|----------------------------|
-| `K`                | ホバー（ドキュメント表示） |
-| `gd`               | 定義へジャンプ             |
-| `gr`               | 参照一覧表示               |
-| `gi`               | 実装へジャンプ             |
-| `gy`               | 型定義へジャンプ           |
-| `]d` / `[d`        | 次 / 前の診断へ移動        |
-| `]c` / `[c`        | 次 / 前の Git hunk へ移動  |
-| `<leader>d`        | 診断フロート（トグル）     |
-| `<leader>rn`       | シンボル名を変更           |
-| `<leader>ca`       | コードアクション           |
-| `<leader>F`        | コード整形（Conform.nvim） |
-| `<C-/>` or `<C-_>` | コメントトグル             |
-
----
-
-## Treesitter
-
-| キー         | アクション              |
-|--------------|-------------------------|
-| `<leader>ts` | Treesitter パーサを更新 |
-| `<leader>ti` | Treesitter 情報を表示   |
-
----
-
-## Git / Gitsigns / LazyGit
-
-| キー         | アクション        | プラグイン |
-|--------------|-------------------|------------|
-| `<leader>gg` | LazyGit を開く    | LazyGit    |
-| `<leader>gc` | コミット履歴      | Telescope  |
-| `<leader>gs` | Git ステータス    | Telescope  |
-| `<leader>hs` | Hunk をステージ   | Gitsigns   |
-| `<leader>hr` | Hunk をリセット   | Gitsigns   |
-| `<leader>hp` | Hunk をプレビュー | Gitsigns   |
-| `<leader>hb` | 行ブレーム切替    | Gitsigns   |
-| `<leader>hd` | diff 表示         | Gitsigns   |
-
----
-
-## バッファ / タブ操作（Bufferline）
-
-| キー         | アクション                     |
-|--------------|--------------------------------|
-| `<leader>bp` | バッファピッカー               |
-| `<leader>x`  | 閉じるバッファを選択（ピック） |
-| `<leader>q`  | 現在のバッファを閉じる         |
-
----
-
-## ファイルツリー
-
-| キー        | アクション         | プラグイン |
-|-------------|--------------------|------------|
-| `<leader>e` | ファイルツリー開閉 | nvim-tree  |
-
----
-
-## ターミナル（ToggleTerm）
-
-| キー         | アクション             | プラグイン |
-|--------------|------------------------|------------|
-| `<leader>tt` | ターミナル（下部）     | ToggleTerm |
-| `<leader>tf` | ターミナル（フロート） | ToggleTerm |
-
-### ターミナルモード内
-
-| キー          | アクション                       |
-|---------------|----------------------------------|
-| `<Esc>`       | ノーマルモードへ戻る             |
-| `jk`          | ノーマルモードへ戻る（任意設定） |
-| `<C-h/j/k/l>` | 他のウィンドウへ移動             |
-
----
+| キー          | モード     | コマンド                         | 説明                                         |
+|---------------|------------|----------------------------------|----------------------------------------------|
+| `<leader>co`  | ノーマル   | `:CopilotChatToggle`             | Copilot Chat ウィンドウの開閉                |
+| `<leader>cex` | ビジュアル | `:CopilotChat prompt=ExplainJa`  | 選択範囲のコードを日本語で説明               |
+| `<leader>cfx` | ビジュアル | `:CopilotChat prompt=FixJa`      | 選択範囲のコードの問題を修正                 |
+| `<leader>ct`  | ビジュアル | `:CopilotChat prompt=TestsJa`    | 選択範囲のコードに対する単体テストを生成     |
+| `<leader>coc` | ビジュアル | `:CopilotChat prompt=OptimizeJa` | 選択範囲のコードを最適化（リファクタリング） |
+| `<leader>ccm` | ノーマル   | `:CopilotChat prompt=CommitJa`   | 日本語のコミットメッセージを生成             |
+| `q`           | ノーマル   | -                                | チャットウィンドウを閉じる                   |
+| `Enter`       | -          | ノーマル / 挿入                  | プロンプトを送信                             |
 
 ## Copilot
 
-| キー         | アクション             | プラグイン  |
-|--------------|------------------------|-------------|
-| `<leader>ce` | Copilot 有効化         | Copilot.lua |
-| `<leader>cd` | Copilot 無効化         | Copilot.lua |
-| `<leader>cs` | Copilot ステータス確認 | Copilot.lua |
-| `<leader>cp` | Copilot パネルを開く   | Copilot.lua |
+| キー         | コマンド           | 説明                   |
+|--------------|--------------------|------------------------|
+| `<leader>ce` | `:Copilot enable`  | Copilot を有効化       |
+| `<leader>cd` | `:Copilot disable` | Copilot を無効化       |
+| `<leader>cs` | `:Copilot status`  | 現在のステータスを表示 |
+| `<leader>cp` | `:Copilot panel`   | Copilot パネルを開く   |
 
----
+### In Copilot Suggestion
 
-## Copilot Chat
+| キー       | 説明                                |
+|------------|-------------------------------------|
+| `[[`       | 前の提案へ移動                      |
+| `]]`       | 次の提案へ移動                      |
+| `Enter`    | 提案を確定（accept）                |
+| `gr`       | 提案をリフレッシュ                  |
+| `Alt + p`  | パネルを開く（open）                |
+| `Tab`      | 提案を確定（accept）                |
+| `Alt + w`  | 単語単位で受け入れる（accept word） |
+| `Alt + l`  | 行単位で受け入れる（accept line）   |
+| `Alt + ]`  | 次の提案に移動（next）              |
+| `Alt + [`  | 前の提案に移動（prev）              |
+| `Ctrl + ]` | 提案を非表示（dismiss）             |
 
-| キー          | アクション             | モード     | プラグイン       |
-|---------------|------------------------|------------|------------------|
-| `<leader>co`  | CopilotChat パネル開閉 | ノーマル   | CopilotChat.nvim |
-| `<leader>ccm` | コミットメッセージ生成 | ノーマル   | CopilotChat.nvim |
-| `<leader>cex` | 選択コードを説明       | ビジュアル | CopilotChat.nvim |
-| `<leader>cfx` | 選択コードを修正       | ビジュアル | CopilotChat.nvim |
-| `<leader>ct`  | テスト生成             | ビジュアル | CopilotChat.nvim |
-| `<leader>coc` | コードを最適化         | ビジュアル | CopilotChat.nvim |
+## Gitsigns
 
----
+| キー         | コマンド                         | 説明                             |
+|--------------|----------------------------------|----------------------------------|
+| `]c`         | `gs.next_hunk()`                 | 次の変更（hunk）へ移動           |
+| `[c`         | `gs.prev_hunk()`                 | 前の変更（hunk）へ移動           |
+| `<leader>hs` | `gs.stage_hunk()`                | 現在の変更（hunk）をステージング |
+| `<leader>hr` | `gs.reset_hunk()`                | 現在の変更（hunk）をリセット     |
+| `<leader>hp` | `gs.preview_hunk()`              | 変更内容をプレビュー表示         |
+| `<leader>hb` | `gs.toggle_current_line_blame()` | 現在行の blame 表示をトグル      |
+| `<leader>hd` | `gs.diffthis()`                  | 現在ファイルの差分を表示         |
 
-## その他便利コマンド
+## Lazygit
 
-| コマンド                      | 説明                               |
-|-------------------------------|------------------------------------|
-| `:WhichKey <leader>`          | Leader配下のキー一覧を開く         |
-| `:WhichKey g` / `:WhichKey z` | `g` / `z` 系キーの一覧を開く       |
-| `:WhichKeyPrefix`             | 任意の接頭辞を入力してメニュー表示 |
-| `:Copilot enable / disable`   | Copilot の有効・無効を切り替え     |
-| `:CopilotChat`                | チャットウィンドウを開く           |
-| `:TSUpdate`                   | Treesitter のパーサを更新          |
-| `:LazyGit`                    | LazyGit を起動                     |
+| キー         | コマンド   | 説明                           |
+|--------------|------------|--------------------------------|
+| `<leader>gg` | `:LazyGit` | LazyGit を開く（常に新規起動） |
 
----
+### In Lazygit Terminal
 
-## Tips
+| モード            | キー    | 動作     | 説明                       |
+|-------------------|---------|----------|----------------------------|
+| `t`（ターミナル） | `<Esc>` | `:close` | LazyGit ウィンドウを閉じる |
+| `t`（ターミナル） | `q`     | `:close` | LazyGit ウィンドウを閉じる |
 
-- Leader キーは `<Space>`
-- which-key の自動表示は無効 (`triggers = {}`)
-- 手動表示キー: `<leader>wk` または `<C-Space>`
-- `desc` 付きのマップは which-key に自動表示される
-- ビジュアル選択中でも Copilot Chat のコード解析が可能
- `<leader>wk`  | which-key 表示       | which-key       |
+## LSP
+
+| キー         | コマンド                        | 説明                                       |
+|--------------|---------------------------------|--------------------------------------------|
+| `gd`         | `vim.lsp.buf.definition()`      | 定義へジャンプ                             |
+| `gr`         | `vim.lsp.buf.references()`      | 参照を一覧表示                             |
+| `gi`         | `vim.lsp.buf.implementation()`  | 実装へジャンプ                             |
+| `gy`         | `vim.lsp.buf.type_definition()` | 型定義へジャンプ                           |
+| `K`          | `toggle_hover()`                | Hover 情報をトグル表示（LSP ドキュメント） |
+| `<leader>d`  | `toggle_diagnostic_float()`     | Diagnostic 情報（エラー等）をトグル表示    |
+| `<leader>rn` | `vim.lsp.buf.rename()`          | シンボル名をリネーム                       |
+| `<leader>ca` | `vim.lsp.buf.code_action()`     | コードアクション（修正候補など）を表示     |
+| `[d`         | `vim.diagnostic.goto_prev()`    | 前の診断（エラー・警告）へ移動             |
+| `]d`         | `vim.diagnostic.goto_next()`    | 次の診断（エラー・警告）へ移動             |
+
+## NvimTree
+
+| キー        | コマンド            | 説明                                     |
+|-------------|---------------------|------------------------------------------|
+| `<leader>e` | `:NvimTreeToggle`   | ファイルツリーの開閉をトグル             |
+| `<leader>o` | `:NvimTreeFocus`    | ファイルツリーにフォーカス               |
+| `<leader>r` | `:NvimTreeRefresh`  | ファイルツリーを再読み込み               |
+| `<leader>n` | `:NvimTreeFindFile` | 現在のファイルをツリー内でハイライト表示 |
+
+## VimTableMode
+
+| キー         | コマンド            | 説明                       |
+|--------------|---------------------|----------------------------|
+| `<leader>ta` | `:TableModeRealign` | 表（テーブル）を再整列する |
+
+## Telescope
+
+### Search / Navigation (Normal Mode)
+
+| キー         | コマンド                          | 説明                                               |
+|--------------|-----------------------------------|----------------------------------------------------|
+| `<leader>ff` | `:Telescope find_files`           | ファイルを検索（隠しファイル含む）                 |
+| `<leader>fg` | `:Telescope live_grep`            | ripgrep による全文検索（リアルタイム）             |
+| `<leader>fb` | `:Telescope buffers`              | 開いているバッファを一覧表示                       |
+| `<leader>fh` | `:Telescope help_tags`            | Vim/Neovim のヘルプを検索                          |
+| `<leader>rf` | `:Telescope oldfiles`             | 最近開いたファイルの履歴を表示                     |
+| `<leader>fs` | `:Telescope lsp_document_symbols` | 現在ドキュメント内のシンボル一覧（関数・変数など） |
+| `<leader>fr` | `:Telescope lsp_references`       | シンボルの参照箇所を一覧表示                       |
+| `<leader>fd` | `:Telescope diagnostics`          | LSP の診断（エラー・警告）を一覧表示               |
+| `<leader>gc` | `:Telescope git_commits`          | Git コミット履歴を表示                             |
+| `<leader>gs` | `:Telescope git_status`           | Git 変更ファイルを表示                             |
+
+### In Telescope Prompt
+
+#### Insert Mode
+
+| キー       | 動作                                     |
+|------------|------------------------------------------|
+| `Ctrl + j` | 次の項目を選択                           |
+| `Ctrl + k` | 前の項目を選択                           |
+| `Ctrl + q` | 選択項目を quickfix リストに送信して開く |
+| `Esc`      | Telescope を閉じる                       |
+
+#### Normal Mode
+
+| キー       | 動作                                         |
+|------------|----------------------------------------------|
+| `q`        | Telescope を閉じる                           |
+| `Ctrl + j` | 次の項目を選択                               |
+| `Ctrl + k` | 前の項目を選択                               |
+| `Ctrl + q` | 選択項目を quickfix リストに送信して開く     |
+| `d`        | （buffers ピッカー内）選択したバッファを削除 |
+
+## ToggleTerm
+
+| キー         | コマンド        | 説明                                              |
+|--------------|-----------------|---------------------------------------------------|
+| `<leader>tb` | `:TermBottom`   | 下パネルでターミナルを開閉（固定 ID=1）           |
+| `<leader>tf` | `:TermFloat`    | フロートウィンドウでターミナルを開閉（固定 ID=2） |
+| `<leader>tr` | `:TermRight`    | 右パネルでターミナルを開閉（固定 ID=3）           |
+| `<leader>tn` | `:TermNew`      | 新しい下パネルターミナルを作成                    |
+| `<leader>tN` | `:TermNewRight` | 新しい右パネルターミナルを作成                    |
+
+### In ToggleTerm Terminal Mode
+
+| キー  | 動作               | 説明                                     |
+|-------|--------------------|------------------------------------------|
+| `Esc` | `<C-\><C-n>`       | ノーマルモードに戻る（直感的操作）       |
+| `q`   | `<C-\><C-n>:q<CR>` | ターミナルを即終了してウィンドウを閉じる |
+
+## Treesitter
+
+| キー           | モード                | 説明                                   |
+|----------------|-----------------------|----------------------------------------|
+| `Ctrl + Space` | ノーマル / ビジュアル | 選択を開始 or ノード（構文単位）を拡大 |
+| `Ctrl + s`     | ノーマル / ビジュアル | スコープ（関数・ブロックなど）を拡大   |
+| `Backspace`    | ノーマル / ビジュアル | ノード単位で選択を縮小                 |
