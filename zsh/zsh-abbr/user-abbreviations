@@ -1,0 +1,29 @@
+abbr vim="nvim"
+abbr rm="rm -iv --preserve-root"
+
+abbr zshrc="code ~/.zshrc"
+abbr zshrci="code-insiders ~/.zshrc"
+abbr rezshrc="source ~/.zshrc"
+
+abbr al="code ~/.zsh.d/alias.zsh"
+abbr ev="code ~/.zsh.d/eval.zsh"
+abbr path="code ~/.zsh.d/path.zsh"
+abbr ss="code ~/.config/starship.toml"
+
+abbr works="cd ~/Works"
+
+abbr la="ls -laF"
+
+abbr tree1="tree -L 1"
+abbr tree2="tree -L 2"
+abbr tree3="tree -L 3"
+
+abbr f="find . -name"
+
+abbr glo="git log --oneline"
+abbr glt="git log --pretty=format:'%H (%ai) %s'"
+
+abbr dcbnc="docker compose build --no-cache"
+abbr dcu="docker compose up"
+abbr dcud="docker compose up -d"
+abbr dcd="docker compose down"
