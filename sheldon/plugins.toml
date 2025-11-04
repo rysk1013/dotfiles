@@ -1,0 +1,31 @@
+shell = "zsh"
+
+[plugins]
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+
+[plugins.zsh-syntax-highlighting]
+github = "zsh-users/zsh-syntax-highlighting"
+
+[plugins.zsh-abbr]
+github = "olets/zsh-abbr"
+
+[plugins.fzf]
+github = "junegunn/fzf"
+apply  = ["fzf-install", "fzf-source"]
+use    = ["shell/key-bindings.zsh", "shell/completion.zsh"]
+
+[templates]
+fzf-install = """
+{{ dir }}/install --bin > /dev/null
+if [[ ":$PATH:" != *":{{ dir }}/bin:"* ]]; then
+  export PATH="$PATH:{{ dir }}/bin"
+fi
+"""
+
+fzf-source = """
+{% for file in files -%}
+source "{{ file }}"
+{% endfor -%}
+"""
