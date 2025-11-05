@@ -1,6 +1,12 @@
 abbr vim="nvim"
 abbr rm="rm -iv --preserve-root"
 
+abbr dsoff="defaults write com.apple.desktopservices DSDontWriteNetworkStores True"
+abbr dson="defaults write com.apple.desktopservices DSDontWriteNetworkStores False"
+
+abbr spotoff="sudo mdutil -a -i off"
+abbr spoton="sudo mdutil -a -i on"
+
 abbr zshrc="code ~/.zshrc"
 abbr zshrci="code-insiders ~/.zshrc"
 abbr rezshrc="source ~/.zshrc"
