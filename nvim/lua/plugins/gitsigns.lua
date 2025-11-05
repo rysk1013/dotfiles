@@ -54,10 +54,10 @@ return {
 			return "<Ignore>"
 		end, { expr = true, desc = "Prev Git hunk" })
 
-		vim.keymap.set("n", "<leader>hs", gs.stage_hunk, { desc = "Stage hunk" })
-		vim.keymap.set("n", "<leader>hr", gs.reset_hunk, { desc = "Reset hunk" })
-		vim.keymap.set("n", "<leader>hp", gs.preview_hunk, { desc = "Preview hunk" })
-		vim.keymap.set("n", "<leader>hb", gs.toggle_current_line_blame, { desc = "Toggle blame" })
-		vim.keymap.set("n", "<leader>hd", gs.diffthis, { desc = "Diff current file" })
+		vim.keymap.set("n", "<leader>ghs", gs.stage_hunk, { desc = "Stage hunk" })
+		vim.keymap.set("n", "<leader>ghr", gs.reset_hunk, { desc = "Reset hunk" })
+		vim.keymap.set("n", "<leader>ghp", gs.preview_hunk, { desc = "Preview hunk" })
+		vim.keymap.set("n", "<leader>ghb", gs.toggle_current_line_blame, { desc = "Toggle blame" })
+		vim.keymap.set("n", "<leader>ghd", gs.diffthis, { desc = "Diff current file" })
 	end,
 }
