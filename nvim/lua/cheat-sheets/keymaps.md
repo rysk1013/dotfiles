@@ -20,8 +20,8 @@
 | `Ctrl + n`     | `cmp.mapping.select_next_item()`         | 次の補完候補を選択         |
 | `Ctrl + p`     | `cmp.mapping.select_prev_item()`         | 前の補完候補を選択         |
 | `Ctrl + y`     | `cmp.mapping.confirm({ select = true })` | 補完を確定（Enter の代替） |
-| `Ctrl + e`     | `cmp.mapping.abort()`                    | 補完をキャンセル           |
 | `Ctrl + Space` | `cmp.mapping.complete()`                 | 手動で補完を呼び出す       |
+| `q`            | `cmp.mapping.abort()`                    | 補完ウィンドウを閉じる     |
 
 ## Conform
 
