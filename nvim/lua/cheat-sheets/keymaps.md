@@ -69,15 +69,15 @@
 
 ## Gitsigns
 
-| キー         | コマンド                         | 説明                             |
-|--------------|----------------------------------|----------------------------------|
-| `]c`         | `gs.next_hunk()`                 | 次の変更（hunk）へ移動           |
-| `[c`         | `gs.prev_hunk()`                 | 前の変更（hunk）へ移動           |
-| `<leader>hs` | `gs.stage_hunk()`                | 現在の変更（hunk）をステージング |
-| `<leader>hr` | `gs.reset_hunk()`                | 現在の変更（hunk）をリセット     |
-| `<leader>hp` | `gs.preview_hunk()`              | 変更内容をプレビュー表示         |
-| `<leader>hb` | `gs.toggle_current_line_blame()` | 現在行の blame 表示をトグル      |
-| `<leader>hd` | `gs.diffthis()`                  | 現在ファイルの差分を表示         |
+| キー          | コマンド                         | 説明                             |
+|---------------|----------------------------------|----------------------------------|
+| `]c`          | `gs.next_hunk()`                 | 次の変更（hunk）へ移動           |
+| `[c`          | `gs.prev_hunk()`                 | 前の変更（hunk）へ移動           |
+| `<leader>ghs` | `gs.stage_hunk()`                | 現在の変更（hunk）をステージング |
+| `<leader>ghr` | `gs.reset_hunk()`                | 現在の変更（hunk）をリセット     |
+| `<leader>ghp` | `gs.preview_hunk()`              | 変更内容をプレビュー表示         |
+| `<leader>ghb` | `gs.toggle_current_line_blame()` | 現在行の blame 表示をトグル      |
+| `<leader>ghd` | `gs.diffthis()`                  | 現在ファイルの差分を表示         |
 
 ## Lazygit
 
