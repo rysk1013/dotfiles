@@ -4,6 +4,14 @@ alias rm="rm -iv --preserve-root"
 # nvim
 alias vim="nvim"
 
+# Do not create .DS_Store files on network or USB volumes0
+alias dsoff="defaults write com.apple.desktopservices DSDontWriteNetworkStores True"
+alias dson="defaults write com.apple.desktopservices DSDontWriteNetworkStores False"
+
+# Spotlight indexing
+alias spotoff="sudo mdutil -a -i off"
+alias spoton="sudo mdutil -a -i on"
+
 # zshrc
 alias zshrc="code ~/.zshrc"
 alias zshrci="code-insiders ~/.zshrc"
