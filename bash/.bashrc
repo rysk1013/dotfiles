@@ -22,9 +22,6 @@ shopt -s histappend
 PROMPT_COMMAND='history -a'
 
 # エイリアス
-# 履歴表示
-alias hist='history'
-
 # .bashrcを開く（VScode）
 alias bashrc="code ~/.bashrc"
 
