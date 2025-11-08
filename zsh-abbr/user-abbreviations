@@ -1,5 +1,6 @@
 abbr vim="nvim"
 abbr rm="rm -iv --preserve-root"
+abbr rmd="rm -rdiv --preserve-root"
 
 abbr dsoff="defaults write com.apple.desktopservices DSDontWriteNetworkStores True"
 abbr dson="defaults write com.apple.desktopservices DSDontWriteNetworkStores False"
