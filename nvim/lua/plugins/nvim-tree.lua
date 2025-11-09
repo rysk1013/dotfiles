@@ -10,7 +10,7 @@ return {
 		require("nvim-tree").setup({
 			sort_by = "case_sensitive",
 			view = {
-				width = 35,
+				width = 30,
 				side = "left",
 				signcolumn = "yes",
 				number = false,
@@ -83,6 +83,19 @@ return {
 					error = "",
 				},
 			},
+			-- on_attach: nvim-tree 内でのキー設定
+			on_attach = function(bufnr)
+				local api = require("nvim-tree.api")
+				-- デフォルトのキーを登録
+				api.config.mappings.default_on_attach(bufnr)
+				-- Ctrl + e を無効化
+				vim.keymap.set(
+					"n",
+					"<C-e>",
+					"<Nop>",
+					{ buffer = bufnr, noremap = true, silent = true, desc = "Disable <C-e> in nvim-tree" }
+				)
+			end,
 		})
 
 		----------------------------------------------------------------
