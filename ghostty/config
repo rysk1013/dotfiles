@@ -1,0 +1,11 @@
+window-theme = ghostty
+window-titlebar-background = #1E1E1E
+window-height = 200
+window-width = 200
+
+macos-titlebar-style = native
+
+background-opacity = 0.85
+
+font-family = JetBrainsMono Nerd Font Mono
+font-size = 18
