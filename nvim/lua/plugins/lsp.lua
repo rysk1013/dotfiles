@@ -34,6 +34,7 @@ return {
 					"bashls",
 					"gopls",
 					"intelephense",
+					"pyright",
 				},
 				automatic_installation = true,
 			})
@@ -233,6 +234,7 @@ return {
 				"bashls",
 				"gopls",
 				"intelephense",
+				"pyright",
 			}
 
 			for _, s in ipairs(servers) do
