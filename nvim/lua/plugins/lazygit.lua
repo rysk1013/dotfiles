@@ -24,7 +24,7 @@ return {
 				local opts = { noremap = true, silent = true, buffer = ev.buf }
 				vim.keymap.set("t", "<Esc>", "<cmd>close<CR>", opts)
 			end,
-			desc = "LazyGit: close with <Esc> or q",
+			desc = "LazyGit: close with <Esc>",
 		})
 
 		-- 念のため TermOpen 側でも設定（環境によって filetype イベントが遅れる場合あり）
@@ -33,9 +33,8 @@ return {
 			callback = function(ev)
 				local opts = { noremap = true, silent = true, buffer = ev.buf }
 				vim.keymap.set("t", "<Esc>", "<cmd>close<CR>", opts)
-				vim.keymap.set("t", "q", "<cmd>close<CR>", opts)
 			end,
-			desc = "LazyGit(term): close with <Esc> or q",
+			desc = "LazyGit(term): close with <Esc>",
 		})
 
 		-- Lazygit 終了時に gitsigns を更新
