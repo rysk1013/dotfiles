@@ -51,9 +51,6 @@ return {
 					[[<C-\><C-n>]],
 					{ buffer = 0, silent = true, desc = "Terminal: Normal mode" }
 				)
-
-				-- q で即終了（ウィンドウを閉じる）
-				vim.keymap.set("t", "q", [[<C-\><C-n>:q<CR>]], { buffer = 0, silent = true, desc = "Terminal: Close" })
 			end,
 		})
 
