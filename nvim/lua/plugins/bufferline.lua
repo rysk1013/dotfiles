@@ -134,6 +134,7 @@ return {
 					smart_bdelete(bufnr)
 				end,
 
+				-- 20文字超は省略、未保存は ● を先頭に付ける
 				max_name_length = 20,
 				truncate_names = true,
 				modified_icon = "●",
