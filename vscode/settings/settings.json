@@ -64,7 +64,7 @@
     // ターミナルのキャレットの色
     "terminalCursor.foreground": "#BCBABE",
     // ターミナルの範囲選択の背景色
-    "terminal.selectionBackground": "#075cee",
+    "terminal.selectionBackground": "#0015ff",
     // フォルダを開く前のステータスバーの色
     "statusBar.noFolderBackground": "#333333",
     // フォルダを開いたときのステータスバーの色
