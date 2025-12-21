@@ -1,6 +1,5 @@
 format = """
 [░▒▓](#a9b1d6)\
-$os\
 $username\
 [](fg:#a9b1d6 bg:#7aa2f7)\
 $directory\
@@ -17,14 +16,6 @@ $nodejs\
 $golang\
 $time\
 """
-
-[os]
-style = "fg:#090c0c bg:#a9b1d6"
-format = '[ $symbol]($style)'
-disabled = false
-
-[os.symbols]
-Macos = ""
 
 [username]
 show_always = true
