@@ -11,9 +11,6 @@ $git_status\
 """
 
 right_format = """
-$php\
-$nodejs\
-$golang\
 $time\
 """
 
