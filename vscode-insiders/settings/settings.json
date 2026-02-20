@@ -622,17 +622,6 @@
     "rgba(85, 30, 115, 0.24)",
   ],
   // ------------------------------------
-  // Live Server
-  // ------------------------------------
-  // 起動時、IPアドレスをローカルIP形式に変更する
-  "liveServer.settings.useLocalIp": true,
-  // 起動できなかった場合、ポップアップメッセージを非表示にする
-  "liveServer.settings.donotShowInfoMsg": true,
-  // 起動時、HTMLファイル上にタグがない場合のエラーメッセージを非表示にする
-  "liveServer.settings.donotVerifyTags": true,
-  // ライブサーバの初期ブラウザ
-  "liveServer.settings.CustomBrowser": "chrome",
-  // ------------------------------------
   // CodeSnap
   // ------------------------------------
   // 背景色
