@@ -6,6 +6,9 @@ config.font_size = 15.0
 config.use_ime = true
 config.window_background_opacity = 0.70
 config.macos_window_background_blur = 20
+config.native_macos_fullscreen_mode = false
+config.initial_cols = 160
+config.initial_rows = 160
 
 ----------------------------------------------------
 -- Tab
