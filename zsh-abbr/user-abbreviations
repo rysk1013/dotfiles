@@ -34,3 +34,8 @@ abbr dcbnc="docker compose build --no-cache"
 abbr dcu="docker compose up"
 abbr dcud="docker compose up -d"
 abbr dcd="docker compose down"
+
+abbr mp="multipass"
+abbr mpst="multipass start"
+abbr mps="multipass shell"
+abbr mpstp="multipass stop"
