@@ -1,0 +1,5 @@
+WRN 2026-05-01T14:32:50.050 ?.61140    server_start:199: Failed to start server: operation not permitted: /var/folders/hg/_t2kj6hx41lfd9snpt74ck4m0000gn/T/nvim.ryosuke/RI93II/nvim.61140.0
+WRN 2026-05-01T14:33:00.719 ?.61145    server_start:199: Failed to start server: operation not permitted: /var/folders/hg/_t2kj6hx41lfd9snpt74ck4m0000gn/T/nvim.ryosuke/mSkH9f/nvim.61145.0
+WRN 2026-05-01T14:33:18.397 ?.61170    server_start:199: Failed to start server: operation not permitted: /var/folders/hg/_t2kj6hx41lfd9snpt74ck4m0000gn/T/nvim.ryosuke/dXhKd1/nvim.61170.0
+WRN 2026-05-01T15:27:03.354 ?.70614    server_start:199: Failed to start server: operation not permitted: /var/folders/hg/_t2kj6hx41lfd9snpt74ck4m0000gn/T/nvim.ryosuke/ylp5z8/nvim.70614.0
+WRN 2026-05-01T15:42:45.078 ?.71831    server_start:199: Failed to start server: operation not permitted: /var/folders/hg/_t2kj6hx41lfd9snpt74ck4m0000gn/T/nvim.ryosuke/hXxIYV/nvim.71831.0
