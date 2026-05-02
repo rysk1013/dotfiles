@@ -39,11 +39,14 @@ config.show_new_tab_button_in_tab_bar = false
 -- タブの閉じるボタンを非表示
 config.show_close_tab_button_in_tabs = false
 
--- タブ同士の境界線を非表示
 config.colors = {
+	-- タブ同士の境界線を非表示
 	tab_bar = {
 		inactive_tab_edge = "none",
 	},
+	-- セレクション
+	selection_bg = "#00ff00",
+	selection_fg = "#FFFFFF",
 }
 
 -- タブの形をカスタマイズ
