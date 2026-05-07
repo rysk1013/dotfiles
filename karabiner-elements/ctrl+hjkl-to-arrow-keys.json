@@ -1,7 +1,15 @@
 {
-  "description": "Ctrl + hjkl to Arrow Keys",
+  "description": "Ctrl+hjkl to Arrow Keys",
   "manipulators": [
     {
+      "conditions": [
+        {
+          "bundle_identifiers": [
+            "^com\\.github\\.wez\\.wezterm$"
+          ],
+          "type": "frontmost_application_unless"
+        }
+      ],
       "from": {
         "key_code": "h",
         "modifiers": {
@@ -22,6 +30,14 @@
       "type": "basic"
     },
     {
+      "conditions": [
+        {
+          "bundle_identifiers": [
+            "^com\\.github\\.wez\\.wezterm$"
+          ],
+          "type": "frontmost_application_unless"
+        }
+      ],
       "from": {
         "key_code": "j",
         "modifiers": {
@@ -42,6 +58,14 @@
       "type": "basic"
     },
     {
+      "conditions": [
+        {
+          "bundle_identifiers": [
+            "^com\\.github\\.wez\\.wezterm$"
+          ],
+          "type": "frontmost_application_unless"
+        }
+      ],
       "from": {
         "key_code": "k",
         "modifiers": {
@@ -62,6 +86,14 @@
       "type": "basic"
     },
     {
+      "conditions": [
+        {
+          "bundle_identifiers": [
+            "^com\\.github\\.wez\\.wezterm$"
+          ],
+          "type": "frontmost_application_unless"
+        }
+      ],
       "from": {
         "key_code": "l",
         "modifiers": {
