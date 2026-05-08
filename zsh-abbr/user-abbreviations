@@ -35,6 +35,8 @@ abbr dcu="docker compose up"
 abbr dcud="docker compose up -d"
 abbr dcd="docker compose down"
 
+abbr ghost="ghostty +show-config --default"
+
 abbr mp="multipass"
 abbr mpst="multipass start"
 abbr mps="multipass shell"
