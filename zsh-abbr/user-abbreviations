@@ -1,4 +1,6 @@
 abbr vim="nvim"
+abbr vimd="NVIM_APPNAME=nvim_dev nvim"
+
 abbr rm="rm -iv"
 abbr rmd="rm -rdiv"
 
