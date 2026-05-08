@@ -1,7 +1,7 @@
 abbr vim="nvim"
 abbr vimd="NVIM_APPNAME=nvim_dev nvim"
 
-abbr rm="rm -iv"
+abbr rm="rm -iv --preserve-root"
 abbr rmd="rm -rdiv"
 
 abbr dsoff="defaults write com.apple.desktopservices DSDontWriteNetworkStores True"
