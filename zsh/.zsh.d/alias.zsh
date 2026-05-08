@@ -1,5 +1,6 @@
 # rm
 alias rm="rm -iv --preserve-root"
+alias rmd="rm -rdiv"
 
 # nvim
 alias vim="nvim"
@@ -46,6 +47,7 @@ alias dcbnc="docker compose build --no-cache"
 alias dcu="docker compose up"
 alias dcud="docker compose up -d"
 alias dcd="docker compose down"
+alias containers="docker ps --format 'table {{.Names}}\t{{.Image}}'"
 
 # laravel
 sail-create () {curl -s "https://laravel.build/$1" | bash}
@@ -55,3 +57,6 @@ alias sail="./vendor/bin/sail"
 alias ubuntu="ssh ryosuke@192.168.64.3"
 # UTM(To connect with Kali)
 alias kali="ssh kali@192.168.64.4"
+
+# LocalStack
+alias awsl="aws --endpoint-url http://localhost:4566 --profile localstack"
