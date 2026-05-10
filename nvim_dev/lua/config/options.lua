@@ -62,7 +62,7 @@ opt.mouse = "a"
 -- OSクリップボードと共有
 opt.clipboard = "unnamedplus"
 -- キーマップ待機時間（ms）
-opt.timeoutlen = 300
+opt.timeoutlen = 2000
 -- 更新イベント発火までの時間（ms）
 opt.updatetime = 250
 -- =========================
