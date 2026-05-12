@@ -1,5 +1,5 @@
 # rm
-alias rm="rm -iv --preserve-root"
+alias rm="rm -iv"
 alias rmd="rm -rdiv"
 
 # nvim
