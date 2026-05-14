@@ -24,9 +24,9 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- ウィンドウ分割
 -- =========================
 -- <leader>sv で縦分割
-keymap("n", "<leader>sv", "<cmd>vsplit<CR>", opts)
+keymap("n", "<leader>sr", "<cmd>vsplit<CR>", opts)
 -- <leader>sh で横分割
-keymap("n", "<leader>sh", "<cmd>split<CR>", opts)
+keymap("n", "<leader>sd", "<cmd>split<CR>", opts)
 -- <leader>sx で現在の分割を閉じる
 keymap("n", "<leader>sx", "<cmd>close<CR>", opts)
 -- =========================
