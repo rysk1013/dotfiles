@@ -8,7 +8,7 @@ local opts = { noremap = true, silent = true }
 -- jj で INSERT モードを抜ける
 keymap("i", "jj", "<Esc>", opts)
 -- <Esc> で検索ハイライトを消す
-keymap("n", "<Esc>", "<cmd>nohlsearch<CR>", opts)
+keymap("n", "nh", "<cmd>nohlsearch<CR>", opts)
 -- =========================
 -- ウィンドウ移動
 -- =========================
@@ -57,6 +57,17 @@ keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
 -- =========================
 -- <leader>tw でテキスト折り返しを切り替え
 keymap("n", "<leader>tw", "<cmd>set wrap! wrap?<CR>", opts)
+-- =========================
+-- コピーファイルパス
+-- =========================
+-- Absolute
+function copy_absolute_file_path()
+  local path = vim.fn.expand("%:p")
+  vim.fn.setreg("+", path)
+  print("Copied")
+end
+
+keymap("n", "<leader>cc", function() copy_absolute_file_path() end, opts)
 -- =========================
 -- 便利操作
 -- =========================
