@@ -1,5 +1,4 @@
-abbr vim="nvim"
-abbr vimd="NVIM_APPNAME=nvim_dev nvim"
+abbr reload="exec $SHELL -l"
 
 abbr rm="rm -iv"
 abbr rmd="rm -rdiv"
@@ -9,6 +8,9 @@ abbr dson="defaults write com.apple.desktopservices DSDontWriteNetworkStores Fal
 
 abbr spotoff="sudo mdutil -a -i off"
 abbr spoton="sudo mdutil -a -i on"
+
+abbr vim="nvim"
+abbr lvim="NVIM_APPNAME=lazy-vim nvim"
 
 abbr zshrc="code ~/.zshrc"
 abbr zshrci="code-insiders ~/.zshrc"
