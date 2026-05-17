@@ -13,7 +13,7 @@ return {
         explorer = { enabled = false },
         indent = { enabled = false },
         input = { enabled = false },
-        picker = { enabled = true },
+        picker = require("plugins.snacks.picker"),
         notifier = { enabled = false },
         quickfile = { enabled = false },
         scope = { enabled = false },
