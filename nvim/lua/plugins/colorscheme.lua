@@ -1,19 +1,22 @@
 return {
   {
-    "Mofiqul/vscode.nvim",
+    "EdenEast/nightfox.nvim",
 
     lazy = false,
 
     priority = 1000,
 
-    opts = {
-      transparent = true,
-    },
+    config = function()
+     require("nightfox").setup({
+        options = {
+          transparent = true,
+        },
+     })
 
-    config = function(_, opts)
-     require("vscode").setup(opts)
+     vim.cmd.colorscheme("carbonfox")
 
-     vim.cmd.colorscheme("vscode")
+     -- customize visual mode highlight
+     vim.api.nvim_set_hl(0, 'Visual', { bg = '#5e6480', fg = '#ffffff' })
     end
   }
 }
