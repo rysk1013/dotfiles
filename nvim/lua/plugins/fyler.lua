@@ -1,5 +1,7 @@
 return {
   {
+    enabled = false,
+
     "A7Lavinraj/fyler.nvim",
 
     dependencies = { "nvim-mini/mini.icons" },
