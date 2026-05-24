@@ -31,6 +31,11 @@ return {
         signcolumn = "yes:2",
         statuscolumn = "",
       },
+      columns = {
+        "icons",
+        -- Avoid cursor layout issues
+        padding = "  ",
+      }
     },
   }
 }
