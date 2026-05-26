@@ -11,7 +11,7 @@ return {
         bigfile = { enabled = false },
         dashboard = { enabled = false },
         explorer = { enabled = false },
-        indent = { enabled = false },
+        indent = require("plugins.snacks.indent"),
         input = { enabled = false },
         picker = require("plugins.snacks.picker"),
         notifier = { enabled = false },
