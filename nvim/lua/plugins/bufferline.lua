@@ -49,11 +49,11 @@ return {
         offsets = {
           {
             -- Apply this offset when NvimTree is open
-            filetype = "NvimTree",
+            filetype = "SidebarNvim",
             -- Display label text above the sidebar
-            text = "File Explorer",
+            text = "Workspace",
             -- Align the label text to the left
-            text_align = "left",
+            text_align = "center",
             -- Show a separator between sidebar and buffers
             separator = true,
           },
