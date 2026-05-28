@@ -67,7 +67,7 @@ function copy_absolute_file_path()
   print("Copied")
 end
 
-keymap("n", "<leader>cc", function() copy_absolute_file_path() end, opts)
+keymap("n", "<leader>cp", function() copy_absolute_file_path() end, opts)
 -- =========================
 -- 便利操作
 -- =========================
