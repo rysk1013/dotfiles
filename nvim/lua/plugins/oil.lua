@@ -31,6 +31,9 @@ return {
         signcolumn = "yes:2",
         statuscolumn = "",
       },
+      keymaps = {
+        ["gy"] = { "actions.yank_entry", mode = "n" },
+      }
     },
   }
 }
