@@ -1,22 +1,20 @@
 return {
-  {
-    "EdenEast/nightfox.nvim",
+  "EdenEast/nightfox.nvim",
 
-    lazy = false,
+  lazy = false,
 
-    priority = 1000,
+  priority = 1000,
 
-    config = function()
-     require("nightfox").setup({
-        options = {
-          transparent = true,
-        },
-     })
+  config = function()
+   require("nightfox").setup({
+      options = {
+        transparent = true,
+      },
+   })
 
-     vim.cmd.colorscheme("carbonfox")
+   vim.cmd.colorscheme("carbonfox")
 
-     -- customize visual mode highlight
-     vim.api.nvim_set_hl(0, 'Visual', { bg = '#5e6480', fg = '#ffffff' })
-    end
-  }
+   -- customize visual mode highlight
+   vim.api.nvim_set_hl(0, 'Visual', { bg = '#5e6480', fg = '#ffffff' })
+  end
 }
