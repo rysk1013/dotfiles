@@ -1,4 +1,9 @@
 return {
+  -- Go
+  gopls = {},
+  -- JS/TS
+  eslint = {},
+   -- Lua
   lua_ls = {
     settings = {
       Lua = {
@@ -7,6 +12,10 @@ return {
         },
       },
     },
-  },
-  intelephense = {}
+  }, ts_ls = {},
+  -- PHP
+  intelephense = {},
+  -- python
+  basedpyright = {},
+  ruff = {},
 }
