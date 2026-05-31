@@ -6,6 +6,7 @@ return {
 
     config = function()
       local custom_section_separator = { left = "", right = "" }
+      local bg_gray = { bg = "#5c6d74" }
 
       require("lualine").setup({
         options = {
@@ -25,7 +26,7 @@ return {
               "diff",
               "diagnostics",
               separator = custom_section_separator,
-              color = { bg = "#5c6d74" },
+              color = bg_gray,
             },
           },
           lualine_c = {
@@ -50,7 +51,7 @@ return {
             {
               "progress",
               separator = custom_section_separator,
-              color = { bg = "#5c6d74" },
+              color = bg_gray,
             },
           },
           lualine_z = {
