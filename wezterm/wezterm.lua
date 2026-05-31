@@ -60,8 +60,8 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 	local foreground = "#FFFFFF"
 	local edge_background = "none"
 	if tab.is_active then
-		background = "#ae8b2d"
-		foreground = "#FFFFFF"
+		background = "#dfff00"
+		foreground = "#202020"
 	end
 	local edge_foreground = background
 	local title = "   " .. wezterm.truncate_right(tab.active_pane.title, max_width - 1) .. "   "
