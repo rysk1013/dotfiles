@@ -8,12 +8,17 @@ return {
   config = function()
     require("tokyonight").setup({
       transparent = true,
+
+      on_highlights = function(highlights, colors)
+        highlights.LineNr = { fg = "#808080" }
+        highlights.LineNrAbove = { fg = "#808080" }
+        highlights.LineNrBelow = { fg = "#808080" }
+        highlights.Visual = { bg = "#5e6480", fg = "#ffffff" }
+        highlights.Comment = { fg = "#7a88cf", italic = true }
+        highlights.DiagnosticUnnecessary = { fg = "#708090" }
+      end,
     })
 
     vim.cmd.colorscheme("tokyonight")
-
-    -- customize visual mode highlight
-    vim.api.nvim_set_hl(0, 'Visual', { bg = '#5e6480', fg = '#ffffff' })
-
   end
 }
