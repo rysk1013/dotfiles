@@ -5,6 +5,7 @@ return {
 
   dependencies = {
     {
+      -- Sticky scroll
       'nvim-treesitter/nvim-treesitter-context',
       opts = {
         max_lines = 4,
@@ -109,7 +110,7 @@ return {
       'notify',
       'oil',
       'oil_preview',
-      'SidebarNvimx',
+      'SidebarNvim',
       'snacks_dashboard',
       'snacks_layout_box',
       'snacks_notif',
@@ -118,6 +119,7 @@ return {
       'snacks_win',
       'TelescopePrompt',
       'TelescopeResults',
+      'text',
     }
 
     -- FileTypeでのハイライト有効化とパーサーの自動インストール
