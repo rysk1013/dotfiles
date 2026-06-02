@@ -5,7 +5,6 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
 
     config = function()
-      local bg_gray = { bg = "#5c6d74" }
       local section_separator = { left = "", right = "" }
       local white_separator = {
         function() return "" end,
@@ -32,7 +31,6 @@ return {
               "diff",
               "diagnostics",
               separator = section_separator,
-              color = bg_gray,
             },
           },
           lualine_c = {
@@ -59,7 +57,6 @@ return {
             {
               "progress",
               separator = section_separator,
-              color = bg_gray,
             },
             white_separator,
           },
