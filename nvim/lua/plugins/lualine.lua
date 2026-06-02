@@ -5,31 +5,38 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
 
     config = function()
-      local custom_section_separator = { left = "", right = "" }
       local bg_gray = { bg = "#5c6d74" }
+      local section_separator = { left = "", right = "" }
+      local white_separator = {
+        function() return "" end,
+        padding = 0,
+        color = { fg = "#ffffff", bg = "NONE" },
+      }
 
       require("lualine").setup({
         options = {
           theme = "powerline_dark",
-          component_separators = { left = "", right = "" },
+          component_separators = { left = "", right = "" },
         },
         sections = {
           lualine_a = {
             {
               "mode",
-              separator = custom_section_separator,
+              separator = section_separator,
             },
           },
           lualine_b = {
+            white_separator,
             {
               "branch",
               "diff",
               "diagnostics",
-              separator = custom_section_separator,
+              separator = section_separator,
               color = bg_gray,
             },
           },
           lualine_c = {
+            white_separator,
             {
               "filename",
               path = 1,
@@ -46,18 +53,20 @@ return {
               },
             },
             "filetype",
+            white_separator,
           },
           lualine_y = {
             {
               "progress",
-              separator = custom_section_separator,
+              separator = section_separator,
               color = bg_gray,
             },
+            white_separator,
           },
           lualine_z = {
             {
               "location",
-              separator = custom_section_separator,
+              separator = section_separator,
             },
           }
         }
