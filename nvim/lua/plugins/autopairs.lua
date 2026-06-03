@@ -1,9 +1,9 @@
 return {
   {
-      'windwp/nvim-autopairs',
+    'windwp/nvim-autopairs',
 
-      event = "InsertEnter",
+    event = "InsertEnter",
 
-      config = true
+    config = true
   }
 }
