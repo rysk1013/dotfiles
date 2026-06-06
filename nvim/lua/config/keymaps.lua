@@ -61,7 +61,7 @@ keymap("n", "<leader>tw", "<cmd>set wrap! wrap?<CR>", opts)
 -- コピーファイルパス
 -- =========================
 -- Absolute
-function copy_absolute_file_path()
+local function copy_absolute_file_path()
   local path = vim.fn.expand("%:p")
   vim.fn.setreg("+", path)
   print("Copied")
