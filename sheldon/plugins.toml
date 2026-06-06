@@ -10,4 +10,3 @@ github = "zsh-users/zsh-syntax-highlighting"
 
 [plugins.zsh-abbr]
 github = "olets/zsh-abbr"
-
