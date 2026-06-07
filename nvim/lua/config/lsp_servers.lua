@@ -1,8 +1,11 @@
 return {
+  -- Bash/Sh/Zsh
+  bashls = {},
   -- Go
   gopls = {},
   -- JS/TS
   eslint = {},
+  ts_ls = {},
    -- Lua
   lua_ls = {
     settings = {
@@ -12,7 +15,7 @@ return {
         },
       },
     },
-  }, ts_ls = {},
+  },
   -- PHP
   intelephense = {},
   -- python
