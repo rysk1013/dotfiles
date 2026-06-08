@@ -1,3 +1,3 @@
 return {
-  require("plugins.colorscheme.tokyonight"),
+  require("plugins.colorschemes.tokyonight"),
 }
