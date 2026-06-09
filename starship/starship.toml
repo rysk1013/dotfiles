@@ -7,11 +7,9 @@ palette = "catppuccin_mocha"
 
 # custom format
 format = """
-[╭─ $shell──$nix_shell───────────── $memory_usage ──╌╌ $nodejs$python$golang$ocaml $fill ╌╌─╮](overlay0)
+[╭─ $shell──$nix_shell───────────── $memory_usage ──╌╌ $php$nodejs$python$golang$lua $fill ╌╌─╮](overlay0)
 [├╌](overlay0)$sudo$username$hostname$localip$directory$read_only$git_branch$git_commit$git_metrics [$fill $cmd_duration ┘](overlay0)
-[╰─ $battery $character](overlay0) """
-
-#format = '$all$directory$character'
+[╰─$character](overlay0)"""
 
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
@@ -19,7 +17,6 @@ command_timeout = 500
 add_newline = true
 
 # Catppuchin Theme
-
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
 flamingo = "#f2cdcd"
@@ -47,7 +44,6 @@ surface0 = "#313244"
 base = "#1e1e2e"
 mantle = "#181825"
 crust = "#11111b"
-
 
 [shell]
 fish_indicator = 'fish'
@@ -87,8 +83,11 @@ format = '[Node](bold lavender) [$version](bold dimmed lavender) '
 [golang]
 format = '[Go](bold lavender) [$version](bold dimmed lavender) '
 
-[ocaml]
-format = '[Ocaml](bold pink) [$version](bold dimmed pink) '
+[php]
+format = '[PHP](bold lavender) [$version](bold dimmed lavender) '
+
+[lua]
+format = '[Lua](bold lavender) [$version](bold dimmed lavender) '
 
 [memory_usage]
 disabled = false
@@ -143,25 +142,9 @@ style = 'bold mauve'
 
 # prompt char
 [character]
-success_symbol = '[──╌╌](overlay0)'
-error_symbol = '[──╌╌](red)'
+success_symbol = '(overlay0)'
+error_symbol = '[X](red)'
 
 # Disable the package module, hiding it from the prompt completely
 [package]
 disabled = true
-
-
-# battery
-[battery]
-
-full_symbol = '● '
-charging_symbol = '◉ '
-discharging_symbol = '◯ '
-
-[[battery.display]]
-threshold = 20
-style = 'red'
-
-[[battery.display]]
-threshold = 100
-style = 'teal'
