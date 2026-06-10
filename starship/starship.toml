@@ -7,8 +7,8 @@ palette = "catppuccin_mocha"
 
 # custom format
 format = """
-[╭─ $shell──$nix_shell───────────── $memory_usage ──╌╌ $php$nodejs$python$golang$lua $fill ╌╌─╮](overlay0)
-[├╌](overlay0)$sudo$username$hostname$localip$directory$read_only$git_branch$git_commit$git_metrics [$fill $cmd_duration ┘](overlay0)
+[╭─ $shell──$nix_shell───────────── $memory_usage ──╌╌ $php$nodejs$python$golang$lua$cmd_duration](overlay0)
+[├╌](overlay0)$sudo$username$hostname$localip$directory$read_only$git_branch$git_commit$git_metrics(overlay0)
 [╰─$character](overlay0)"""
 
 # Wait 10 milliseconds for starship to check files under the current directory.
@@ -122,14 +122,10 @@ tag_disabled = false
 tag_symbol = ''
 only_detached = false
 
-[fill]
-symbol = ' '
-style = 'bold base'
-
 # time of command
 [cmd_duration]
 min_time = 500
-format = ' [$duration](bold dimmed flamingo)'
+format = '[\[$duration\]](bold dimmed flamingo)'
 
 [directory]
 fish_style_pwd_dir_length = 5
