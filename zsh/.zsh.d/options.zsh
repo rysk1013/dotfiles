@@ -25,16 +25,6 @@ setopt auto_cd
 # エラー時や補完失敗時のビープ音を無効化
 setopt no_beep
 
-# 拡張グロブを有効化
-# 例: **/*.go や ^*.log が使える
-setopt extended_glob
-
-# 補完システム(compinit)を遅延ロード
-autoload -Uz compinit
-
-# 補完システムを初期化
-compinit
-
 # 補完候補が複数ある場合に選択メニューを表示
 zstyle ':completion:*' menu select
 
