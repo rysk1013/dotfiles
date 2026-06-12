@@ -15,7 +15,7 @@ return {
         highlights.LineNrBelow = { fg = "#808080" }
         highlights.CursorLineNr = { fg = "#00bfff" }
         highlights.Visual = { bg = "#5e6480", fg = "#ffffff" }
-        highlights.Comment = { fg = "#6d7aba", italic = true }
+        highlights.Comment = { fg = "#6b77b5", italic = true }
         highlights.DiagnosticUnnecessary = { fg = "#708090" }
       end,
     })
