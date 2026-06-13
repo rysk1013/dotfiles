@@ -7,8 +7,8 @@ palette = "catppuccin_mocha"
 
 # custom format
 format = """
-[╭─ $shell──$nix_shell── $memory_usage ──╌╌ $php$nodejs$python$golang$lua$cmd_duration](overlay0)
-[├╌](overlay0)$sudo$username$hostname$localip$directory$read_only$git_branch$git_commit$git_metrics(overlay0)
+[╭─ $shell─╌╌$sudo$username$localip──╌╌ $php$nodejs$python$golang$lua](overlay0)
+[├╌](overlay0) $directory$read_only$git_branch$git_commit$git_status(overlay0)
 [╰─$character](overlay0)"""
 
 # Wait 10 milliseconds for starship to check files under the current directory.
@@ -59,14 +59,19 @@ pure_msg = '[\[pure\]](sapphire)'
 unknown_msg = '[\[unknown\]](dimmed sapphire)'
 format = '╌╌ [$name](dimmed teal)$state ╌╌'
 
+[sudo]
+format = ' [sudo](bold red)'
+disabled = false
+
 [username]
-style_user = 'teal bold'
+style_user = 'bold blue'
 format = ' [$user@]($style)'
 disabled = false
 show_always = true
 
-[sudo]
-format = ' [sudo](bold red)'
+[localip]
+ssh_only = false
+format = '[$localipv4](bold dimmed blue) '
 disabled = false
 
 [python]
@@ -96,36 +101,12 @@ format = '[$ram_pct]($style)'
 symbol = ''
 style = 'dimmed blue'
 
-[localip]
-ssh_only = false
-format = '[@$localipv4](bold dimmed blue) '
-disabled = false
-
 [hostname]
 ssh_only = false
 ssh_symbol = 'ssh:'
 format = '[$ssh_symbol](bold dimmed maroon)[$hostname](bold dimmed sapphire)'
 trim_at = ''
 disabled = false
-
-[git_metrics]
-disabled = false
-format = ' [+$added](bold teal)[-$deleted](bold pink)'
-
-[git_branch]
-format = '[$branch(:$remote_branch)]($style)'
-style = 'bold pink'
-
-[git_commit]
-format = ' [$tag](dimmed pink)'
-tag_disabled = false
-tag_symbol = ''
-only_detached = false
-
-# time of command
-[cmd_duration]
-min_time = 500
-format = '[\[$duration\]](bold dimmed flamingo)'
 
 [directory]
 fish_style_pwd_dir_length = 5
@@ -134,12 +115,34 @@ truncation_length = 5
 truncation_symbol = '…/'
 read_only = ' read-only'
 read_only_style = 'bold dimmed mauve'
-style = 'bold mauve'
+style = 'bold teal'
+
+[git_metrics]
+disabled = false
+format = ' [+$added](bold teal)[-$deleted](bold pink)'
+
+[git_branch]
+format = '[$branch(:$remote_branch)]($style)'
+style = 'bold blue'
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]](bold pink))'
+
+[git_commit]
+format = ' [$tag](dimmed blue)'
+tag_disabled = false
+tag_symbol = ''
+only_detached = false
+
+# time of command
+[cmd_duration]
+min_time = 500
+format = '[\[$duration\]](bold dimmed blue) '
 
 # prompt char
 [character]
 success_symbol = '(overlay0)'
-error_symbol = '[X](red)'
+error_symbol = '[ X](red)'
 
 # Disable the package module, hiding it from the prompt completely
 [package]
