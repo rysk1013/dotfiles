@@ -24,21 +24,24 @@ return {
     config = function()
       local dap = require("dap")
       local dapui = require("dapui")
+      local debuggers = require("config.dap_debuggers")
 
       dapui.setup()
 
       require("nvim-dap-virtual-text").setup()
 
       require("mason-nvim-dap").setup({
-        ensure_installed = {
-          "php",
-        },
+        ensure_installed = vim.tbl_map(function(debugger)
+          return debugger.adapter
+        end, debuggers),
         automatic_installation = true,
         handlers = {},
       })
 
       -- Load debugger configuration
-      require("plugins.daps.php")
+      for _, debugger in ipairs(debuggers) do
+        require("plugins.daps." .. debugger.config)
+      end
 
       dap.listeners.after.event_initialized["dapui_config"] = function()
         dapui.open()
