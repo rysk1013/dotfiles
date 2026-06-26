@@ -102,6 +102,7 @@ return {
       local group = vim.api.nvim_create_augroup('TreesitterSetup', { clear = true })
 
       local ignore_filetypes = {
+        'aerial',
         'blink-cmp-documentation',
         'blink-cmp-menu',
         'checkhealth',
