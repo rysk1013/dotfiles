@@ -12,7 +12,7 @@ return {
       disable_default_keybindings = 0,
       bindings = nil,
       open = false,
-      side = "left",
+      side = "right",
       initial_width = 30,
       hide_statusline = false,
       update_interval = 1000,
