@@ -7,6 +7,10 @@ return {
        "nvim-tree/nvim-web-devicons"
     },
 
+    keys = {
+      { "<leader>a", "<CMD>AerialToggle!<CR>", desc = "Toggle Aerial" },
+    },
+
     opts = {
       layout = {
         default_direction = "left",
@@ -15,10 +19,6 @@ return {
       show_guides = true,
       autojump = false,
       filter_kind = false,
-    },
-
-    keys = {
-      { "<leader>a", "<CMD>AerialToggle!<CR>", desc = "Toggle Aerial" },
     },
   }
 }
