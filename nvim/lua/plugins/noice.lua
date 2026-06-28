@@ -2,7 +2,22 @@ return {
   {
     "folke/noice.nvim",
 
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      {
+        "rcarriga/nvim-notify",
+        opts = {
+          background_colour = "#000000",
+          top_down = false,
+        },
+      },
+    },
+
     event = "VeryLazy",
+
+    keys = {
+      { "<leader>nd", function() require("noice").cmd("dismiss") end, { desc = "Dismiss Noice" } },
+    },
 
     opts = {
       views = {
@@ -21,18 +36,5 @@ return {
         },
       },
     },
-
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      {
-        "rcarriga/nvim-notify",
-        opts = {
-          background_colour = "#000000",
-          top_down = false,
-        },
-      },
-    },
-
-    vim.keymap.set("n", "<leader>nd", function() require("noice").cmd("dismiss") end, { desc = "Dismiss Noice" })
   }
 }
