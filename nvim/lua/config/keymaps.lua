@@ -8,7 +8,7 @@ local opts = { noremap = true, silent = true }
 -- jj で INSERT モードを抜ける
 keymap("i", "jj", "<Esc>", opts)
 -- <leader>n で検索ハイライトを消す
-keymap("n", "<leader>n", "<cmd>nohlsearch<CR>", opts)
+keymap("n", "<Esc>", "<cmd>nohlsearch<CR>", opts)
 -- =========================
 -- ウィンドウ移動
 -- =========================
