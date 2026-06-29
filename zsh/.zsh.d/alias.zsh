@@ -14,15 +14,15 @@ alias spotoff="sudo mdutil -a -i off"
 alias spoton="sudo mdutil -a -i on"
 
 # zshrc
-alias zshrc="code ~/.zshrc"
-alias zshrci="code-insiders ~/.zshrc"
+alias zshrc="vim ~/.zshrc"
+alias zshrci="vim-insiders ~/.zshrc"
 alias rezshrc="source ~/.zshrc"
 
 # zsh config files
-alias al="code ~/.zsh.d/alias.zsh"
-alias ev="code ~/.zsh.d/eval.zsh"
-alias path="code ~/.zsh.d/path.zsh"
-alias ss="code ~/.config/starship.toml"
+alias al="vim ~/.zsh.d/alias.zsh"
+alias ev="vim ~/.zsh.d/eval.zsh"
+alias path="vim ~/.zsh.d/path.zsh"
+alias ss="vim ~/.config/starship.toml"
 
 # ディレクトリ詳細確認
 alias la="ls -laF"
