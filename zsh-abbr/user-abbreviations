@@ -1,47 +1,82 @@
-abbr reload="exec $SHELL -l"
+# ------------------------------------------------------------------------------
+# Shell
+# ------------------------------------------------------------------------------
 
-abbr rm="rm -iv"
-abbr rmd="rm -rdiv"
+abbr zrestart="exec $SHELL -l"
+abbr zsource="source ~/.zshrc"
 
-abbr dsoff="defaults write com.apple.desktopservices DSDontWriteNetworkStores True"
-abbr dson="defaults write com.apple.desktopservices DSDontWriteNetworkStores False"
+# ------------------------------------------------------------------------------
+# Zsh configuration
+# ------------------------------------------------------------------------------
 
-abbr spotoff="sudo mdutil -a -i off"
-abbr spoton="sudo mdutil -a -i on"
+abbr zshrc="vim ~/.zshrc"
+abbr zshrci="vim-insiders ~/.zshrc"
+abbr zalias="vim ~/.zsh.d/alias.zsh"
+abbr zeval="vim ~/.zsh.d/eval.zsh"
+abbr zpath="vim ~/.zsh.d/path.zsh"
+
+# ------------------------------------------------------------------------------
+# File and directory
+# ------------------------------------------------------------------------------
+
+abbr rm="rm -v"
+abbr rmi="rm -iv"
+abbr rmd="rm -riv"
+
+abbr la="ls -laF"
+abbr tree1="tree -L 1"
+abbr tree2="tree -L 2"
+abbr tree3="tree -L 3"
+abbr fname="find . -name"
+
+abbr works="cd ~/Works"
+abbr dot="cd ~/Works/dotfiles"
+
+# ------------------------------------------------------------------------------
+# Editor
+# ------------------------------------------------------------------------------
 
 abbr vim="nvim"
 abbr lvim="NVIM_APPNAME=lazy-vim nvim"
 
-abbr zshrc="code ~/.zshrc"
-abbr zshrci="code-insiders ~/.zshrc"
-abbr rezshrc="source ~/.zshrc"
-
-abbr al="code ~/.zsh.d/alias.zsh"
-abbr ev="code ~/.zsh.d/eval.zsh"
-abbr path="code ~/.zsh.d/path.zsh"
-abbr ss="code ~/.config/starship.toml"
-
-abbr works="cd ~/Works"
-
-abbr la="ls -laF"
-
-abbr tree1="tree -L 1"
-abbr tree2="tree -L 2"
-abbr tree3="tree -L 3"
-
-abbr f="find . -name"
+# ------------------------------------------------------------------------------
+# Git
+# ------------------------------------------------------------------------------
 
 abbr glo="git log --oneline"
 abbr glt="git log --pretty=format:'%H (%ai) %s'"
 
+# ------------------------------------------------------------------------------
+# Containers and virtual machines
+# ------------------------------------------------------------------------------
+
+# docker
 abbr dcbnc="docker compose build --no-cache"
 abbr dcu="docker compose up"
 abbr dcud="docker compose up -d"
 abbr dcd="docker compose down"
 
-abbr ghost="ghostty +show-config --default"
-
+# multipass
 abbr mp="multipass"
-abbr mpst="multipass start"
-abbr mps="multipass shell"
-abbr mpstp="multipass stop"
+abbr mpstart="multipass start"
+abbr mpshell="multipass shell"
+abbr mpstop="multipass stop"
+
+# ------------------------------------------------------------------------------
+# macOS
+# ------------------------------------------------------------------------------
+
+# .DS_Store
+abbr dsoff="defaults write com.apple.desktopservices DSDontWriteNetworkStores True"
+abbr dson="defaults write com.apple.desktopservices DSDontWriteNetworkStores False"
+abbr dsreset="defaults delete com.apple.desktopservices DSDontWriteNetworkStores"
+
+# Spotlight
+abbr spotoff="sudo mdutil -a -i off"
+abbr spoton="sudo mdutil -a -i on"
+
+# ------------------------------------------------------------------------------
+# Terminal
+# ------------------------------------------------------------------------------
+
+abbr ghost="ghostty +show-config --default"
