@@ -116,6 +116,7 @@ return {
         'dapui_stacks',
         'dapui_watches',
         'dapui_hover',
+        'dbee',
         'flash_prompt',
         'lazy',
         'mason',
