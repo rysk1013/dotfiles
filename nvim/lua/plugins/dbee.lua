@@ -18,4 +18,24 @@ return {
       require("dbee").setup()
     end,
   },
+  {
+    "hrsh7th/nvim-cmp",
+
+    dependencies = {
+      {
+        "MattiasMTS/cmp-dbee",
+        dependencies = {
+          {"kndndrj/nvim-dbee"}
+        },
+        ft = "sql",
+        opts = {},
+      },
+    },
+
+    opts = {
+      sources = {
+        { "cmp-dbee" },
+      },
+    },
+  },
 }
