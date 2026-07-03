@@ -11,7 +11,7 @@ return {
     lazy = false,
 
     keys = {
-      { "<leader>e", "<CMD>Fyler<CR>", mode = "n", desc = "Open Fyler" },
+      { "<leader>e", "<cmd>Fyler<CR>", mode = "n", desc = "Open Fyler" },
     },
 
     opts = {
