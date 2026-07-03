@@ -8,15 +8,15 @@ return {
 
     keys = function()
       local keys = {
-        { "<leader>bp", "<CMD>BufferLinePick<CR>", desc = "Pick buffer" },
-        { "<leader>bh", "<CMD>BufferLineMovePrev<CR>", desc = "Move buffer left" },
-        { "<leader>bl", "<CMD>BufferLineMoveNext<CR>", desc = "Move buffer right" },
+        { "<leader>bp", "<cmd>BufferLinePick<CR>", desc = "Pick buffer" },
+        { "<leader>bh", "<cmd>BufferLineMovePrev<CR>", desc = "Move buffer left" },
+        { "<leader>bl", "<cmd>BufferLineMoveNext<CR>", desc = "Move buffer right" },
       }
 
       for i = 1, 9 do
         table.insert(keys, {
           "<leader>" .. i,
-          "<CMD>BufferLineGoToBuffer " .. i .. "<CR>",
+          "<cmd>BufferLineGoToBuffer " .. i .. "<CR>",
           desc = "Go to buffer " .. i,
         })
       end
