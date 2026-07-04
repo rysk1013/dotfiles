@@ -13,7 +13,7 @@ return {
     build = function() vim.fn["mkdp#util#install"]() end,
 
     keys = {
-      { "<leader>mp", "<CMD>MarkdownPreviewToggle<CR>", mode = "n", desc = "Toggle markdown preview" },
+      { "<leader>mp", "<cmd>MarkdownPreviewToggle<CR>", mode = "n", desc = "Toggle markdown preview" },
     },
   }
 }
