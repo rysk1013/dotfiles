@@ -18,7 +18,7 @@ return {
     dependencies = { { "nvim-mini/mini.icons", opts = {} } },
 
     keys = {
-      { "<leader>e", "<CMD>Oil<CR>", mode = "n", desc = "Open Oil" },
+      { "<leader>e", "<cmd>Oil<CR>", mode = "n", desc = "Open Oil" },
     },
 
     opts = {
