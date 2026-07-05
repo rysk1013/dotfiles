@@ -10,10 +10,10 @@ return {
     },
 
     keys = {
-      { "<leader>ff", "<CMD>Telescope find_files<CR>", mode = "n", desc = "Telescope find files" },
-      { "<leader>fg", "<CMD>Telescope live_grep<CR>", mode = "n", desc = "Telescope live grep" },
-      { "<leader>fb", "<CMD>Telescope buffers<CR>", mode = "n", desc = "Telescope buffers" },
-      { "<leader>fh", "<CMD>Telescope help_tags<CR>", mode = "n", desc = "Telescope help tags" },
+      { "<leader>ff", "<cmd>Telescope find_files<CR>", mode = "n", desc = "Telescope find files" },
+      { "<leader>fg", "<cmd>Telescope live_grep<CR>", mode = "n", desc = "Telescope live grep" },
+      { "<leader>fb", "<cmd>Telescope buffers<CR>", mode = "n", desc = "Telescope buffers" },
+      { "<leader>fh", "<cmd>Telescope help_tags<CR>", mode = "n", desc = "Telescope help tags" },
     },
 
     config = function()
