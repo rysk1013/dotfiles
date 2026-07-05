@@ -5,7 +5,7 @@ return {
     lazy = false,
 
     keys = {
-      { "<leader>S", "<CMD>SidebarNvimToggle<CR>", mode = "n", desc = "Toggle Sidebar" },
+      { "<leader>S", "<cmd>SidebarNvimToggle<CR>", mode = "n", desc = "Toggle Sidebar" },
     },
 
     opts = {
