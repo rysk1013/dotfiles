@@ -5,7 +5,7 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter" },
 
     keys = {
-      { "<leader>tt", function() require("treesj").toggle() end, mode = "n", desc = "TreeSJ toggle" },
+      { "<leader>tt", function() require("treesj").toggle() end, mode = "n", desc = "Toggle treesj" },
     },
 
     config = function()
