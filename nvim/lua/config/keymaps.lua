@@ -34,6 +34,8 @@ keymap("n", "<leader>sx", "<cmd>close<CR>", opts)
 -- =========================
 -- <leader>bd で現在のバッファを閉じる
 keymap("n", "<leader>bd", "<cmd>bdelete<CR>", opts)
+-- <leader>bA ですべてのバッファを閉じる
+keymap("n", "<leader>bA", "<cmd>%bd<CR>", opts)
 -- <Tab> で次のバッファへ
 keymap("n", "<Tab>", "<cmd>bnext<CR>", opts)
 -- <S-Tab> で前のバッファへ
