@@ -2,7 +2,7 @@ return {
   {
     "nvim-lualine/lualine.nvim",
 
-    dependencies = { "nvim-tree/nvim-web-devicons" },
+    dependencies = { "nvim-mini/mini.icons" },
 
     config = function()
       local section_separator = { left = "", right = "" }
