@@ -4,6 +4,9 @@ eval "$(starship init zsh)"
 #### sheldon ####
 eval "$(sheldon source)"
 
+#### zoxide ####
+eval "$(zoxide init zsh --cmd cd)"
+
 #### mise ####
 eval "$(mise activate zsh)"
 
