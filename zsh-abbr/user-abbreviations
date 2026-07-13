@@ -23,14 +23,23 @@ abbr rm="rm -v"
 abbr rmi="rm -iv"
 abbr rmd="rm -riv"
 
-abbr la="ls -laF"
 abbr tree1="tree -L 1"
 abbr tree2="tree -L 2"
 abbr tree3="tree -L 3"
+
 abbr fname="find . -name"
 
 abbr works="cd ~/Works"
 abbr dot="cd ~/Works/dotfiles"
+
+# ------------------------------------------------------------------------------
+# eza
+# ------------------------------------------------------------------------------
+
+abbr ls="eza --icons=auto --group-directories-first"
+abbr ll="eza -l --icons=auto --git --group-directories-first"
+abbr la="eza -la --icons=auto --git --group-directories-first"
+abbr lt="eza --tree --level=2 --icons=auto --group-directories-first"
 
 # ------------------------------------------------------------------------------
 # Editor
