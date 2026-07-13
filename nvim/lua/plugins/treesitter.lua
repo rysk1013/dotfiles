@@ -108,6 +108,7 @@ return {
         'checkhealth',
         'cmp_docs',
         'cmp_menu',
+        'conf',
         'dap-repl',
         'dap-repl',
         'dapui_console',
