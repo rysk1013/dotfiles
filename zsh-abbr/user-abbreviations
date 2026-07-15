@@ -23,6 +23,8 @@ abbr rm="rm -v"
 abbr rmi="rm -iv"
 abbr rmd="rm -riv"
 
+abbr del="trash"
+
 abbr tree1="tree -L 1"
 abbr tree2="tree -L 2"
 abbr tree3="tree -L 3"
