@@ -1,0 +1,64 @@
+# CPU・メモリ・プロセスなどを確認できるクロスプラットフォームのシステムモニター
+brew "bottom"
+# HTTPなどの各種プロトコルでデータを送受信するコマンドラインツール
+brew "curl"
+# アイコン表示やGit連携に対応したlsの代替ツール
+brew "eza"
+# シンプルで高速なfindの代替ツール
+brew "fd"
+# 多数のコーデックに対応した音声・動画の変換および処理ツール
+brew "ffmpeg-full", link: :overwrite
+# コマンドラインで候補を絞り込めるあいまい検索ツール
+brew "fzf"
+# Pull RequestやIssueなどを操作するGitHub公式CLI
+brew "gh"
+# ソースコードの変更履歴を管理する分散型バージョン管理システム
+brew "git"
+# より多くの画像形式と機能に対応したImageMagickの完全版
+brew "imagemagick-full", link: :overwrite
+# JSONデータの抽出・整形・変換を行うコマンドラインツール
+brew "jq"
+# 複数のプログラミング言語やツールのバージョンを管理するランタイムマネージャー
+brew "mise"
+# 拡張性を重視したVim互換のテキストエディター
+brew "neovim"
+# PDFの表示・変換・テキスト抽出などを行うツール群
+brew "poppler"
+# 正規表現などを使って複数のファイル名を一括変更するツール
+brew "rename"
+# SVG画像を高速にレンダリング・変換するツール
+brew "resvg"
+# grepの代替として使える高速なテキスト検索ツール
+brew "ripgrep"
+# 7zをはじめとする多様な圧縮形式を扱うアーカイブツール
+brew "sevenzip"
+# Zshなどのシェルプラグインを管理するツール
+brew "sheldon"
+# シェルのプロンプトを高速かつ柔軟にカスタマイズするツール
+brew "starship"
+# コマンドの簡潔な使用例を表示するtldrクライアント
+brew "tlrc"
+# ファイルやディレクトリを削除せずmacOSのゴミ箱へ移動するツール
+brew "trash"
+# Neovimなどから利用されるインクリメンタル構文解析ライブラリ
+brew "tree-sitter"
+# Tree-sitterのパーサー生成や文法開発に使用するCLI
+brew "tree-sitter-cli"
+# ターミナル上でWebページを閲覧できるテキストブラウザー
+brew "w3m"
+# Markdown形式のノートをターミナルで作成・検索・管理するCLI
+brew "xwmx/taps/nb", trusted: true
+# 画像プレビューなどに対応した高速なターミナルファイルマネージャー
+brew "yazi"
+# 利用履歴を基に目的のディレクトリへ素早く移動するツール
+brew "zoxide"
+
+# 開発作業の履歴やコンテキストを管理するEntireのデスクトップアプリ
+cask "entire"
+# ターミナルのアイコン表示に使用するNerd Fontsのシンボル専用フォント
+cask "font-symbols-only-nerd-font"
+# GPU描画とマルチプレクサー機能を備えたクロスプラットフォームのターミナル
+cask "wezterm@nightly"
+
+# OpenAI Codex CLIをnpmのグローバルパッケージとしてインストール
+npm "@openai/codex"
