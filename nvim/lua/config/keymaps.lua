@@ -47,6 +47,8 @@ keymap("n", "<S-Tab>", "<cmd>bprevious<CR>", opts)
 keymap("n", "<leader>w", "<cmd>write<CR>", opts)
 -- <leader>q で終了
 keymap("n", "<leader>q", "<cmd>quit<CR>", opts)
+-- Insertモードで下に新しい行を追加
+keymap("i", "<C-CR>", "<Esc>o", opts)
 -- =========================
 -- 行移動
 -- =========================
