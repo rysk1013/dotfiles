@@ -18,6 +18,8 @@ brew "git"
 brew "imagemagick-full", link: :overwrite
 # JSONデータの抽出・整形・変換を行うコマンドラインツール
 brew "jq"
+# GUIのような操作性を備えたターミナル用Markdownプレビューアー
+brew "leaf-md"
 # 複数のプログラミング言語やツールのバージョンを管理するランタイムマネージャー
 brew "mise"
 # 拡張性を重視したVim互換のテキストエディター
