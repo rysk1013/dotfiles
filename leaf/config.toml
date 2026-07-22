@@ -16,7 +16,8 @@
 # Relative paths are resolved from this config file's directory.
 # Priority: --theme flag > LEAF_THEME > this setting > ocean
 # Default: ocean
-theme = "ocean"
+# theme = "ocean"
+theme = "themes/transparent.toml"
 
 # Custom theme example:
 # theme = "/path/to/custom-theme.toml"
