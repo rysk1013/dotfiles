@@ -20,6 +20,8 @@ brew "imagemagick-full", link: :overwrite
 brew "jq"
 # GUIのような操作性を備えたターミナル用Markdownプレビューアー
 brew "leaf-md"
+# Mac App Storeのアプリをコマンドラインでインストールおよび更新するツール
+brew "mas"
 # 複数のプログラミング言語やツールのバージョンを管理するランタイムマネージャー
 brew "mise"
 # 拡張性を重視したVim互換のテキストエディター
@@ -55,12 +57,52 @@ brew "yazi"
 # 利用履歴を基に目的のディレクトリへ素早く移動するツール
 brew "zoxide"
 
-# 開発作業の履歴やコンテキストを管理するEntireのデスクトップアプリ
-cask "entire"
+# MacBookの充電上限を設定してバッテリーの劣化を抑えるツール
+cask "aldente"
+# アプリ本体と関連ファイルをまとめて削除するアンインストーラー
+cask "appcleaner"
+# トラックパッドやマウスなどの入力操作をカスタマイズするツール
+cask "bettertouchtool"
+# パスワードマネージャー
+cask "bitwarden"
+# Webブラウザー
+cask "brave-browser"
 # ターミナルのアイコン表示に使用するNerd Fontsのシンボル専用フォント
 cask "font-symbols-only-nerd-font"
-# GPU描画とマルチプレクサー機能を備えたクロスプラットフォームのターミナル
+# Webブラウザー
+cask "google-chrome"
+# 日本語入力
+cask "google-japanese-ime"
+# メニューバーのアイコンを整理
+cask "jordanbaird-ice"
+# キーボードカスタマイズツール
+cask "karabiner-elements"
+# キーボード入力を一時的に無効化するツール
+cask "keyboardcleantool"
+# オフィススイート
+cask "libreoffice"
+# Ubuntu仮想マシンを作成および管理するツール
+cask "multipass"
+# ノートアプリ
+cask "obsidian"
+# ランチャー
+cask "raycast"
+# メールクライアント
+cask "readdle-spark"
+# マウスとトラックパッドでスクロール方向を個別に設定するツール
+cask "scroll-reverser"
+# システムモニター
+cask "stats"
+# コードエディター
+cask "visual-studio-code"
+# ターミナル
 cask "wezterm@nightly"
 
-# OpenAI Codex CLIをnpmのグローバルパッケージとしてインストール
-npm "@openai/codex"
+# 電子書籍
+mas "Amazon Kindle", id: 302584613
+# スリープ管理ツール
+mas "Amphetamine", id: 937984704
+# メッセージアプリ
+mas "LINE", id: 539883307
+
+# pCloud Driveは手動でインストールする
