@@ -7,7 +7,7 @@ local opts = { noremap = true, silent = true }
 -- =========================
 -- jj で INSERT モードを抜ける
 keymap("i", "jj", "<Esc>", opts)
--- <leader>n で検索ハイライトを消す
+-- <Esc> で検索ハイライトを消す
 keymap("n", "<Esc>", "<cmd>nohlsearch<CR>", opts)
 -- =========================
 -- ウィンドウ移動
@@ -23,9 +23,9 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- =========================
 -- ウィンドウ分割
 -- =========================
--- <leader>sv で縦分割
+-- <leader>sr で縦分割
 keymap("n", "<leader>sr", "<cmd>vsplit<CR>", opts)
--- <leader>sh で横分割
+-- <leader>sd で横分割
 keymap("n", "<leader>sd", "<cmd>split<CR>", opts)
 -- <leader>sx で現在の分割を閉じる
 keymap("n", "<leader>sx", "<cmd>close<CR>", opts)
