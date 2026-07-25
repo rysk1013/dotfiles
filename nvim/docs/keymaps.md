@@ -133,6 +133,16 @@
 |---|---|---|
 | N | `<leader>mp` | Markdownプレビューを切り替える |
 
+### Leaf
+
+Markdownバッファでのみ有効です。
+
+定義元: [`after/ftplugin/markdown.lua`](after/ftplugin/markdown.lua)
+
+| モード | キー | 動作 |
+|---|---|---|
+| N | `<leader>md` | 現在のファイルをWezTermの新しいタブでLeafに開く |
+
 ### Noice
 
 定義元: [`lua/plugins/noice.lua`](lua/plugins/noice.lua)
