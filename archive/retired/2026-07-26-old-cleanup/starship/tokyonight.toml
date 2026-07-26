@@ -1,0 +1,75 @@
+palette = "tokyonight"
+
+format = """
+[░▒▓](lavender)\
+$username\
+[](fg:lavender bg:blue)\
+$directory\
+[](fg:blue bg:surface)\
+$git_branch\
+$git_status\
+[](fg:surface)\
+\n$character
+"""
+
+right_format = """
+$time\
+"""
+
+[palettes.tokyonight]
+lavender = "#a9b1d6"
+black = "#090c0c"
+white = "#e3e5e5"
+blue = "#7aa2f7"
+surface = "#394260"
+steel = "#769ff0"
+yellow = "#ffff00"
+cyan = "#73daca"
+green = "#00ff00"
+red = "#FF0000"
+
+[username]
+show_always = true
+style_user = "fg:black bg:lavender"
+style_root = "fg:black bg:lavender"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:white bg:blue"
+format = '[ $path ]($style)'
+truncation_length = 1000
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+style = "fg:steel bg:surface"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "fg:steel bg:surface"
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+[php]
+symbol = ""
+style = "fg:yellow"
+format = '[  $symbol $version ]($style)'
+
+[nodejs]
+symbol = ""
+style = "fg:yellow"
+format = '[  $symbol $version ]($style)'
+
+[golang]
+symbol = "󰟓"
+style = "fg:yellow"
+format = '[  $symbol $version ]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:cyan"
+format = '[   $time ]($style)'
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
