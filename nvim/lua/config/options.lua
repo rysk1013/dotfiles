@@ -9,6 +9,11 @@ vim.g.mapleader = " "
 -- LocalLeaderキーをSpaceへ設定
 vim.g.maplocalleader = "\\"
 -- =========================
+-- タブタイトル設定
+-- =========================
+opt.title = true
+opt.titlestring = "nvim"
+-- =========================
 -- 行番号
 -- =========================
 -- 絶対行番号を表示
