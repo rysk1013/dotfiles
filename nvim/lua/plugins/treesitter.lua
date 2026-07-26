@@ -109,6 +109,7 @@ return {
         'cmp_docs',
         'cmp_menu',
         'conf',
+        'DiffviewFiles',
         'dap-repl',
         'dap-repl',
         'dapui_console',
