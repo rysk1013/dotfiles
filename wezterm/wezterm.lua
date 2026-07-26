@@ -55,6 +55,11 @@ local SOLID_LEFT_ARROW = wezterm.nerdfonts.ple_lower_right_triangle
 -- タブの右側の装飾
 local SOLID_RIGHT_ARROW = wezterm.nerdfonts.ple_upper_left_triangle
 
+-- 実行ファイルのパスからプロセス名だけを取得
+local function basename(path)
+	return path:gsub("(.*[/\\])(.*)", "%2")
+end
+
 wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
 	local background = "#5c6d74"
 	local foreground = "#FFFFFF"
@@ -64,7 +69,12 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 		foreground = "#202020"
 	end
 	local edge_foreground = background
-	local title = "   " .. wezterm.truncate_right(tab.active_pane.title, max_width - 1) .. "   "
+	local process_name = basename(tab.active_pane.foreground_process_name or "")
+	local osc_title = tab.active_pane.title or ""
+	-- OSCタイトルの先頭部分を状態名として使用
+	local state_name = osc_title:match("^([^:%s]+)")
+	local pane_title = state_name and state_name:lower() or process_name
+	local title = "   " .. wezterm.truncate_right(pane_title, max_width - 1) .. "   "
 	return {
 		{ Background = { Color = edge_background } },
 		{ Foreground = { Color = edge_foreground } },
