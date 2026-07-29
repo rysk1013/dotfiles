@@ -9,6 +9,8 @@ local opts = { noremap = true, silent = true }
 keymap("i", "jj", "<Esc>", opts)
 -- <Esc> で検索ハイライトを消す
 keymap("n", "<Esc>", "<cmd>nohlsearch<CR>", opts)
+-- <leader>A で全選択
+keymap("n", "<leader>A", "ggVG", opts)
 -- =========================
 -- ウィンドウ移動
 -- =========================
@@ -62,9 +64,9 @@ keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
 -- <leader>tw でテキスト折り返しを切り替え
 keymap("n", "<leader>tw", "<cmd>set wrap! wrap?<CR>", opts)
 -- =========================
--- コピーファイルパス
+-- コピー
 -- =========================
--- Absolute
+-- 絶対パス
 local function copy_absolute_file_path()
   local path = vim.fn.expand("%:p")
   vim.fn.setreg("+", path)
