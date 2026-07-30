@@ -14,6 +14,8 @@ brew "fzf"
 brew "gh"
 # ソースコードの変更履歴を管理する分散型バージョン管理システム
 brew "git"
+# ターミナル内で複数のAIコーディングエージェントを管理するマルチプレクサー
+brew "herdr"
 # より多くの画像形式と機能に対応したImageMagickの完全版
 brew "imagemagick-full", link: :overwrite
 # JSONデータの抽出・整形・変換を行うコマンドラインツール
