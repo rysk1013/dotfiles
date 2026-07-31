@@ -31,10 +31,12 @@ link_config() {
 }
 
 link_config "$DOTFILES_DIR/ghostty" "$CONFIG_DIR/ghostty"
+link_config "$DOTFILES_DIR/herdr/config.toml" "$CONFIG_DIR/herdr/config.toml"
 link_config "$DOTFILES_DIR/nvim" "$CONFIG_DIR/nvim"
 link_config "$DOTFILES_DIR/sheldon" "$CONFIG_DIR/sheldon"
 link_config "$DOTFILES_DIR/starship/starship.toml" "$CONFIG_DIR/starship.toml"
 link_config "$DOTFILES_DIR/wezterm" "$CONFIG_DIR/wezterm"
+link_config "$DOTFILES_DIR/yazi" "$CONFIG_DIR/yazi"
 link_config "$DOTFILES_DIR/zed/settings.json" "$CONFIG_DIR/zed/settings.json"
 link_config "$DOTFILES_DIR/zsh-abbr" "$CONFIG_DIR/zsh-abbr"
 link_config "$DOTFILES_DIR/zsh/.zshrc" "$HOME/.zshrc"
