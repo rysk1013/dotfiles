@@ -44,6 +44,8 @@ brew "sheldon"
 brew "starship"
 # コマンドの簡潔な使用例を表示するtldrクライアント
 brew "tlrc"
+# 複数の端末セッションを維持・切り替えできるターミナルマルチプレクサー
+brew "tmux"
 # ファイルやディレクトリを削除せずmacOSのゴミ箱へ移動するツール
 brew "trash"
 # Neovimなどから利用されるインクリメンタル構文解析ライブラリ
