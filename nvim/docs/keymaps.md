@@ -9,7 +9,7 @@
 
 ## グローバル
 
-定義元: [`lua/config/keymaps.lua`](lua/config/keymaps.lua)
+定義元: [`lua/config/keymaps.lua`](../lua/config/keymaps.lua)
 
 ### 基本操作
 
@@ -17,6 +17,7 @@
 |---|---|---|
 | I | `jj` | Normalモードへ戻る |
 | N | `<Esc>` | 検索ハイライトを消す |
+| N | `<leader>A` | ファイル全体を選択する |
 | N | `<leader>w` | ファイルを保存する |
 | N | `<leader>q` | Neovimを終了する |
 | I | `<C-CR>` | Insertモードを抜けて下に新しい行を追加する |
@@ -61,7 +62,7 @@
 
 ### Bufferline
 
-定義元: [`lua/plugins/bufferline.lua`](lua/plugins/bufferline.lua)
+定義元: [`lua/plugins/bufferline.lua`](../lua/plugins/bufferline.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -72,7 +73,7 @@
 
 ### Oil
 
-定義元: [`lua/plugins/oil.lua`](lua/plugins/oil.lua)
+定義元: [`lua/plugins/oil.lua`](../lua/plugins/oil.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -81,7 +82,7 @@
 
 ### Aerial
 
-定義元: [`lua/plugins/aerial.lua`](lua/plugins/aerial.lua)
+定義元: [`lua/plugins/aerial.lua`](../lua/plugins/aerial.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -89,7 +90,7 @@
 
 ### Sidebar
 
-定義元: [`lua/plugins/sideber.lua`](lua/plugins/sideber.lua)
+定義元: [`lua/plugins/sideber.lua`](../lua/plugins/sideber.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -111,7 +112,7 @@
 
 ### Treesj
 
-定義元: [`lua/plugins/treesj.lua`](lua/plugins/treesj.lua)
+定義元: [`lua/plugins/treesj.lua`](../lua/plugins/treesj.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -119,7 +120,7 @@
 
 ### DBee
 
-定義元: [`lua/plugins/dbee.lua`](lua/plugins/dbee.lua)
+定義元: [`lua/plugins/dbee.lua`](../lua/plugins/dbee.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -127,7 +128,7 @@
 
 ### Markdown Preview
 
-定義元: [`lua/plugins/markdown-preview.lua`](lua/plugins/markdown-preview.lua)
+定義元: [`lua/plugins/markdown-preview.lua`](../lua/plugins/markdown-preview.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -137,7 +138,7 @@
 
 Markdownバッファでのみ有効です。
 
-定義元: [`after/ftplugin/markdown.lua`](after/ftplugin/markdown.lua)
+定義元: [`after/ftplugin/markdown.lua`](../after/ftplugin/markdown.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -145,7 +146,7 @@ Markdownバッファでのみ有効です。
 
 ### Noice
 
-定義元: [`lua/plugins/noice.lua`](lua/plugins/noice.lua)
+定義元: [`lua/plugins/noice.lua`](../lua/plugins/noice.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -153,7 +154,7 @@ Markdownバッファでのみ有効です。
 
 ### Telescope
 
-定義元: [`lua/plugins/telescope.lua`](lua/plugins/telescope.lua)
+定義元: [`lua/plugins/telescope.lua`](../lua/plugins/telescope.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -164,7 +165,7 @@ Markdownバッファでのみ有効です。
 
 ### Snacks
 
-定義元: [`lua/plugins/snacks.lua`](lua/plugins/snacks.lua)
+定義元: [`lua/plugins/snacks.lua`](../lua/plugins/snacks.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -182,7 +183,7 @@ Markdownバッファでのみ有効です。
 
 ### Flash
 
-定義元: [`lua/plugins/flash.lua`](lua/plugins/flash.lua)
+定義元: [`lua/plugins/flash.lua`](../lua/plugins/flash.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -196,7 +197,7 @@ Markdownバッファでのみ有効です。
 
 Gitsignsのキーマップは、Gitsignsがアタッチされたバッファ内でのみ有効です。
 
-定義元: [`lua/plugins/gitsigns.lua`](lua/plugins/gitsigns.lua)
+定義元: [`lua/plugins/gitsigns.lua`](../lua/plugins/gitsigns.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -219,7 +220,7 @@ Gitsignsのキーマップは、Gitsignsがアタッチされたバッファ内�
 
 ### Git Blame
 
-定義元: [`lua/plugins/git-blame.lua`](lua/plugins/git-blame.lua)
+定義元: [`lua/plugins/git-blame.lua`](../lua/plugins/git-blame.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -227,7 +228,7 @@ Gitsignsのキーマップは、Gitsignsがアタッチされたバッファ内�
 
 ### Diffview
 
-定義元: [`lua/plugins/diffview.lua`](lua/plugins/diffview.lua)
+定義元: [`lua/plugins/diffview.lua`](../lua/plugins/diffview.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -249,7 +250,7 @@ Gitsignsのキーマップは、Gitsignsがアタッチされたバッファ内�
 
 ### nvim-dap
 
-定義元: [`lua/plugins/dap.lua`](lua/plugins/dap.lua)
+定義元: [`lua/plugins/dap.lua`](../lua/plugins/dap.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -265,7 +266,7 @@ Gitsignsのキーマップは、Gitsignsがアタッチされたバッファ内�
 
 ### Laravel
 
-定義元: [`lua/plugins/laravel.lua`](lua/plugins/laravel.lua)
+定義元: [`lua/plugins/laravel.lua`](../lua/plugins/laravel.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -284,7 +285,7 @@ Gitsignsのキーマップは、Gitsignsがアタッチされたバッファ内�
 
 ### Blink
 
-[`lua/plugins/blink.lua`](lua/plugins/blink.lua)で`keymap.preset = "default"`を選択しています。
+[`lua/plugins/blink.lua`](../lua/plugins/blink.lua)で`keymap.preset = "default"`を選択しています。
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -305,7 +306,7 @@ Gitsignsのキーマップは、Gitsignsがアタッチされたバッファ内�
 
 ### Fyler
 
-定義元: [`lua/plugins/fyler.lua`](lua/plugins/fyler.lua)
+定義元: [`lua/plugins/fyler.lua`](../lua/plugins/fyler.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
@@ -313,7 +314,7 @@ Gitsignsのキーマップは、Gitsignsがアタッチされたバッファ内�
 
 ### nvim-cmp
 
-定義元: [`lua/plugins/cmp.lua`](lua/plugins/cmp.lua)
+定義元: [`lua/plugins/cmp.lua`](../lua/plugins/cmp.lua)
 
 | モード | キー | 動作 |
 |---|---|---|
