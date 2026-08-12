@@ -136,6 +136,7 @@ return {
         'TelescopePrompt',
         'TelescopeResults',
         'text',
+        'tmux',
       }
 
       -- FileTypeでのハイライト有効化とパーサーの自動インストール
