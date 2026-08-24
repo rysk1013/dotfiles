@@ -81,6 +81,8 @@ cask "google-japanese-ime"
 cask "jordanbaird-ice"
 # キーボードカスタマイズツール
 cask "karabiner-elements"
+# パスワードマネージャー
+cask "keepassxc"
 # キーボード入力を一時的に無効化するツール
 cask "keyboardcleantool"
 # オフィススイート
