@@ -40,13 +40,23 @@ config.show_new_tab_button_in_tab_bar = false
 config.show_close_tab_button_in_tabs = false
 
 config.colors = {
+  -- ペイン同士の境界線
+  split = "#7aa2f7",
+
 	-- タブ同士の境界線を非表示
 	tab_bar = {
 		inactive_tab_edge = "none",
 	},
+
 	-- セレクション
 	selection_bg = "#00ff00",
 	selection_fg = "#FFFFFF",
+}
+
+-- 非アクティブなペインを暗くする
+config.inactive_pane_hsb = {
+      saturation = 0.8,
+      brightness = 0.60,
 }
 
 -- タブの形をカスタマイズ
