@@ -4,14 +4,19 @@ run = "cd ~/Downloads"
 desc = "Go to Downloads"
 
 [[mgr.prepend_keymap]]
-on = ["g", "w"]
-run = "cd ~/Works"
-desc = "Go to Works"
-
-[[mgr.prepend_keymap]]
 on = ["g", "d"]
 run = "cd ~/Works/dotfiles"
 desc = "Go to dotfiles"
+
+[[mgr.prepend_keymap]]
+on = ["g", "p"]
+run = 'cd "~/pCloud Drive"'
+desc = "Go to pCloud Drive"
+
+[[mgr.prepend_keymap]]
+on = ["g", "w"]
+run = "cd ~/Works"
+desc = "Go to Works"
 
 [[mgr.prepend_keymap]]
 on = "!"
