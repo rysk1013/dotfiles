@@ -21,7 +21,7 @@ brew "imagemagick-full", link: :overwrite
 # JSONデータの抽出・整形・変換を行うコマンドラインツール
 brew "jq"
 # GUIのような操作性を備えたターミナル用Markdownプレビューアー
-brew "leaf-md"
+brew "leaf-markdown-viewer"
 # Mac App Storeのアプリをコマンドラインでインストールおよび更新するツール
 brew "mas"
 # 複数のプログラミング言語やツールのバージョンを管理するランタイムマネージャー
