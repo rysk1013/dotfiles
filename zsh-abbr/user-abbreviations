@@ -31,8 +31,8 @@ abbr tree3="tree -L 3"
 
 abbr fname="find . -name"
 
-abbr works="cd ~/Works"
-abbr dot="cd ~/Works/dotfiles"
+abbr ws="cd ~/Workspace"
+abbr dot="cd ~/Workspace/dotfiles"
 
 # ------------------------------------------------------------------------------
 # eza
