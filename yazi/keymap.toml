@@ -5,7 +5,7 @@ desc = "Go to Downloads"
 
 [[mgr.prepend_keymap]]
 on = ["g", "d"]
-run = "cd ~/Works/dotfiles"
+run = "cd ~/Workspace/dotfiles"
 desc = "Go to dotfiles"
 
 [[mgr.prepend_keymap]]
@@ -15,8 +15,8 @@ desc = "Go to pCloud Drive"
 
 [[mgr.prepend_keymap]]
 on = ["g", "w"]
-run = "cd ~/Works"
-desc = "Go to Works"
+run = "cd ~/Workspace"
+desc = "Go to Workspace"
 
 [[mgr.prepend_keymap]]
 on = "!"
