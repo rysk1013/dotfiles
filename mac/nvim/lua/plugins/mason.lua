@@ -1,0 +1,31 @@
+return {
+  {
+    "mason-org/mason.nvim",
+
+    opts = {
+      ui = {
+        icons = {
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗"
+        }
+      }
+    }
+  },
+  {
+    "mason-org/mason-lspconfig.nvim",
+
+    dependencies = {
+      { "mason-org/mason.nvim", opts = {} },
+      "neovim/nvim-lspconfig",
+    },
+
+    opts = function()
+      local servers = require("config.lsp_servers")
+
+      return {
+        ensure_installed = vim.tbl_keys(servers),
+      }
+    end,
+  }
+}

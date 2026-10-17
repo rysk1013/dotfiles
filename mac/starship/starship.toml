@@ -1,0 +1,90 @@
+palette = "tokyonight"
+
+format = """
+[░▒▓](lavender)\
+$shell\
+$nix_shell\
+[](fg:lavender bg:blue)\
+$directory\
+[](fg:blue bg:surface)\
+$git_branch\
+$git_status\
+[](fg:surface)\
+\n$character
+"""
+
+right_format = """
+$php\
+$nodejs\
+$golang\
+$lua\
+$time\
+"""
+
+[palettes.tokyonight]
+lavender = "#a9b1d6"
+black = "#090c0c"
+white = "#e3e5e5"
+blue = "#7aa2f7"
+surface = "#394260"
+steel = "#769ff0"
+yellow = "#ffff00"
+cyan = "#73daca"
+green = "#00ff00"
+red = "#FF0000"
+
+[shell]
+bash_indicator = "bash"
+zsh_indicator = "zsh"
+powershell_indicator = "pwsh"
+unknown_indicator = "shell"
+style = "fg:black bg:lavender"
+format = "[ $indicator ]($style)"
+disabled = false
+
+[nix_shell]
+style = "fg:black bg:lavender"
+format = '[ $state( \($name\)) ]($style)'
+
+[username]
+show_always = true
+style_user = "fg:black bg:lavender"
+style_root = "fg:black bg:lavender"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:white bg:blue"
+format = '[ $path ]($style)'
+truncation_length = 1000
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+style = "fg:steel bg:surface"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "fg:steel bg:surface"
+format = '([\[$all_status$ahead_behind\]]($style))'
+
+[php]
+format = ' [PHP](bold yellow) [$version](bold dimmed yellow) '
+
+[nodejs]
+format = ' [Node](bold yellow) [$version](bold dimmed yellow) '
+
+[golang]
+format = ' [Go](bold yellow) [$version](bold dimmed yellow) '
+
+[lua]
+format = ' [Lua](bold yellow) [$version](bold dimmed yellow) '
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:cyan"
+format = ' [ $time ]($style)'
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"

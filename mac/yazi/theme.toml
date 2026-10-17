@@ -1,0 +1,21 @@
+[flavor]
+dark = "tokyo-night"
+
+[indicator]
+padding = { open = "▐", close = "▌" }
+
+[mode]
+normal_main = { fg = "#202020", bg = "#DFFF00", bold = true }
+normal_alt  = { fg = "#FFFFFF", bg = "#444444" }
+
+select_main = { fg = "#202020", bg = "#FFAF00", bold = true }
+select_alt  = { fg = "#FFFFFF", bg = "#3C3836" }
+
+unset_main = { fg = "#FFFFFF", bg = "#AF0000", bold = true }
+unset_alt  = { fg = "#00005F", bg = "#00DFFF" }
+
+[status]
+overall = { fg = "#9CFFD3", bg = "#202020" }
+
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }

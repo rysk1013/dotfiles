@@ -1,0 +1,23 @@
+onboarding = false
+
+[theme]
+name = "tokyo-night"
+auto_switch = false
+
+[ui.toast]
+delivery = "terminal"
+
+[ui]
+show_agent_labels_on_pane_borders = true
+
+[keys]
+prefix = "ctrl+a"
+
+# panel
+split_horizontal = "prefix+d"
+split_vertical = "prefix+r"
+resize_mode = "prefix+s"
+
+# workspace
+previous_workspace = "prefix+p"
+next_workspace = "prefix+n"

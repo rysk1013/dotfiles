@@ -1,0 +1,7 @@
+base = "ocean"
+syntax = "base16-ocean.dark"
+
+[ui]
+content_bg = "reset"
+toc_inactive_bg = "reset"
+status_bg = "reset"

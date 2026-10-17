@@ -1,0 +1,17 @@
+return {
+  {
+    "Wansmer/treesj",
+
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+
+    keys = {
+      { "<leader>tt", function() require("treesj").toggle() end, mode = "n", desc = "Toggle treesj" },
+    },
+
+    config = function()
+      require("treesj").setup({
+        use_default_keymaps = false,
+      })
+    end,
+  }
+}
