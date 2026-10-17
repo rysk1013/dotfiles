@@ -1,0 +1,244 @@
+{
+  "buckets": [
+    {
+      "Name": "main",
+      "Source": "https://github.com/ScoopInstaller/Main",
+      "Updated": "2026-10-17T17:33:25+09:00",
+      "Manifests": 1690
+    },
+    {
+      "Name": "extras",
+      "Source": "https://github.com/ScoopInstaller/Extras",
+      "Updated": "2026-10-17T17:33:26+09:00",
+      "Manifests": 2425
+    },
+    {
+      "Name": "versions",
+      "Source": "https://github.com/ScoopInstaller/Versions",
+      "Updated": "2026-10-17T13:41:23+09:00",
+      "Manifests": 627
+    },
+    {
+      "Name": "sysinternals",
+      "Source": "https://github.com/ScoopInstaller/Sysinternals",
+      "Updated": "2026-10-17T04:36:08+09:00",
+      "Manifests": 76
+    },
+    {
+      "Name": "nerd-fonts",
+      "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
+      "Updated": "2026-09-27T01:59:28+09:00",
+      "Manifests": 367
+    },
+    {
+      "Name": "nonportable",
+      "Source": "https://github.com/ScoopInstaller/Nonportable",
+      "Updated": "2026-10-17T04:37:13+09:00",
+      "Manifests": 134
+    },
+    {
+      "Name": "mo-san",
+      "Source": "https://github.com/mo-san/scoop-bucket",
+      "Updated": "2026-10-17T13:29:09+09:00",
+      "Manifests": 133
+    }
+  ],
+  "apps": [
+    {
+      "Name": "7zip",
+      "Version": "26.04",
+      "Source": "main",
+      "Updated": "2026-10-16T16:21:29.1514286+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "brave",
+      "Version": "1.97.57",
+      "Source": "extras",
+      "Updated": "2026-10-16T16:24:58.448472+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "ctrl2cap",
+      "Version": "3.0",
+      "Source": "sysinternals",
+      "Updated": "2026-10-17T20:54:04.4583764+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "fd",
+      "Version": "10.5.0",
+      "Source": "main",
+      "Updated": "2026-10-17T20:49:59.164809+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "ffmpeg",
+      "Version": "9.0.2",
+      "Source": "main",
+      "Updated": "2026-10-17T20:49:49.0793777+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "font-hackgen-console-nf",
+      "Version": "2.10.0",
+      "Source": "mo-san",
+      "Updated": "2026-10-16T17:36:02.9299067+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "fzf",
+      "Version": "0.74.5",
+      "Source": "main",
+      "Updated": "2026-10-17T20:50:01.5793876+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "git",
+      "Version": "2.56.0.2",
+      "Source": "main",
+      "Updated": "2026-10-16T16:22:01.0237908+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "go",
+      "Version": "1.27.2",
+      "Source": "main",
+      "Updated": "2026-10-17T13:37:46.233634+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "imagemagick",
+      "Version": "7.1.2-34",
+      "Source": "main",
+      "Updated": "2026-10-17T20:50:13.2303861+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "innounp",
+      "Version": "2.71.2",
+      "Source": "main",
+      "Updated": "2026-10-17T20:50:04.3331671+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "jq",
+      "Version": "1.8.2",
+      "Source": "main",
+      "Updated": "2026-10-17T20:49:49.7302494+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "localsend",
+      "Version": "1.18.2",
+      "Source": "extras",
+      "Updated": "2026-10-17T19:24:39.2374599+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "mingw",
+      "Version": "16.2.0-rt_v14-rev1",
+      "Source": "main",
+      "Updated": "2026-10-17T13:24:54.6935391+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "neovim",
+      "Version": "0.12.6",
+      "Source": "main",
+      "Updated": "2026-10-16T18:00:31.5817472+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "nodejs-lts",
+      "Version": "24.22.0",
+      "Source": "main",
+      "Updated": "2026-10-17T13:36:34.415144+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "poppler",
+      "Version": "26.09.0-0",
+      "Source": "main",
+      "Updated": "2026-10-17T20:49:58.147927+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "powertoys",
+      "Version": "0.101.2362.0",
+      "Source": "extras",
+      "Updated": "2026-10-16T16:37:57.5666348+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "pwsh",
+      "Version": "7.6.7",
+      "Source": "main",
+      "Updated": "2026-10-16T16:19:26.4289659+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "python",
+      "Version": "3.15.0",
+      "Source": "main",
+      "Updated": "2026-10-17T13:36:22.1627474+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "resvg",
+      "Version": "0.47.0",
+      "Source": "main",
+      "Updated": "2026-10-17T20:50:03.5359154+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "ripgrep",
+      "Version": "15.2.0",
+      "Source": "main",
+      "Updated": "2026-10-17T20:50:00.2331345+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "starship",
+      "Version": "1.26.0",
+      "Source": "main",
+      "Updated": "2026-10-16T16:41:50.8652534+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "tree-sitter",
+      "Version": "0.27.1",
+      "Source": "main",
+      "Updated": "2026-10-16T18:05:36.6830123+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "vcredist2022",
+      "Version": "14.51.36247.0",
+      "Source": "extras",
+      "Updated": "2026-10-16T17:51:34.1317573+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "wezterm-nightly",
+      "Version": "nightly-20261016",
+      "Source": "versions",
+      "Updated": "2026-10-16T17:53:40.2500649+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "yazi",
+      "Version": "26.9.1",
+      "Source": "main",
+      "Updated": "2026-10-17T20:51:15.925263+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "zoxide",
+      "Version": "0.10.0",
+      "Source": "main",
+      "Updated": "2026-10-17T20:50:02.5279804+09:00",
+      "Info": ""
+    }
+  ]
+}
