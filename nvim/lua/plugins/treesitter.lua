@@ -119,6 +119,7 @@ return {
         'dapui_watches',
         'dapui_hover',
         'dbee',
+        'env',
         'flash_prompt',
         'lazy',
         'mason',
