@@ -2,6 +2,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.default_prog = { 'pwsh.exe' }
+config.default_cwd = wezterm.home_dir .. "/workspace"
 config.automatically_reload_config = true
 config.font_size = 12.0
 config.use_ime = true
@@ -10,6 +11,12 @@ config.macos_window_background_blur = 20
 config.native_macos_fullscreen_mode = false
 config.initial_cols = 200
 config.initial_rows = 200
+
+-- 起動時にウィンドウを最大化
+wezterm.on("gui-startup", function(cmd)
+  local _, _, window = wezterm.mux.spawn_window(cmd or {})
+  window:gui_window():maximize()
+end)
 
 ----------------------------------------------------
 -- Tab
