@@ -2,6 +2,8 @@
 local keymap = vim.keymap.set
 -- 共通オプション
 local opts = { noremap = true, silent = true }
+-- Neovim起動時のディレクトリ
+local nvim_start_dir = vim.fn.getcwd()
 -- =========================
 -- 基本操作
 -- =========================
@@ -66,7 +68,7 @@ keymap("n", "<leader>tw", "<cmd>set wrap! wrap?<CR>", opts)
 -- =========================
 -- コピー
 -- =========================
--- 絶対パス
+-- ファイル（絶対パス）
 local function copy_absolute_file_path()
   local path = vim.fn.expand("%:p")
   vim.fn.setreg("+", path)
@@ -74,6 +76,43 @@ local function copy_absolute_file_path()
 end
 
 keymap("n", "<leader>cc", function() copy_absolute_file_path() end, opts)
+
+-- 診断メッセージ
+local function copy_diagnostics()
+  local bufnr = 0
+  local line = vim.api.nvim_win_get_cursor(0)[1] - 1
+  local diagnostics = vim.diagnostic.get(bufnr, { lnum = line })
+
+  if #diagnostics == 0 then
+    vim.notify("No diagnostics found", vim.log.levels.INFO)
+    return
+  end
+
+  local absolute_path = vim.api.nvim_buf_get_name(bufnr)
+  local filename = vim.fs.relpath(nvim_start_dir, absolute_path) or absolute_path
+  local messages = {}
+
+  for _, diagnostic in ipairs(diagnostics) do
+    local severity = vim.diagnostic.severity[diagnostic.severity]
+
+    table.insert(
+      messages,
+      string.format(
+        "%s:%d:%d [%s] %s",
+        filename,
+        diagnostic.lnum + 1,
+        diagnostic.col + 1,
+        severity,
+        diagnostic.message
+      )
+    )
+  end
+
+  vim.fn.setreg("+", table.concat(messages, "\n"))
+  vim.notify("Diagnostics copied to clipboard")
+end
+
+keymap("n", "<leader>dy", function() copy_diagnostics() end, opts)
 -- =========================
 -- コメントアウト
 -- =========================
