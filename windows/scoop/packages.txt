@@ -23,7 +23,6 @@ ripgrep
 starship
 tree-sitter
 vcredist2022
-virtualbox-with-extens…
 wezterm-nightly
 yazi
 zoxide
