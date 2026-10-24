@@ -1,0 +1,85 @@
+# ========================================
+# Tokyo Night - Custom Theme
+# ========================================
+
+# CPU
+[styles.cpu]
+all_entry_colour = "#9ece6a"
+avg_entry_colour = "#f7768e"
+cpu_core_colours = [
+  "#7aa2f7",
+  "#bb9af7",
+  "#7dcfff",
+  "#9ece6a",
+  "#e0af68"
+]
+
+# Memory
+[styles.memory]
+ram_colour = "#bb9af7"
+cache_colour = "#7dcfff"
+swap_colour = "#e0af68"
+
+# Network
+[styles.network]
+rx_colour = "#7dcfff"
+tx_colour = "#9ece6a"
+
+# Battery
+[styles.battery]
+high_battery_colour = "#9ece6a"
+medium_battery_colour = "#e0af68"
+low_battery_colour = "#f7768e"
+
+# Table
+[styles.tables]
+headers = { colour = "#7aa2f7", bold = true }
+
+# Graph
+[styles.graphs]
+graph_colour = "#414868"
+legend_text = { colour = "#a9b1d6" }
+
+# Widget
+[styles.widgets]
+border_colour = "#414868"
+selected_border_colour = "#7aa2f7"
+widget_title = { colour = "#7aa2f7", bold = true }
+text = { colour = "#c0caf5" }
+selected_text = { colour = "#1a1b26", bg_colour = "#7aa2f7" }
+disabled_text = { colour = "#565f89" }
+bg_colour = "#1a1b26"
+
+# ========================================
+# Layout
+# ========================================
+
+# Row 1 - CPU / Battery
+[[row]]
+ratio = 2
+
+  [[row.child]]
+  ratio = 3
+  type = "cpu"
+
+  [[row.child]]
+  ratio = 1
+  type = "batt"
+
+# Row 2 - Memory / Network
+[[row]]
+ratio = 2
+
+  [[row.child]]
+  type = "mem"
+
+  [[row.child]]
+  type = "net"
+
+# Row 3 - Processes
+[[row]]
+ratio = 3
+
+  [[row.child]]
+  type = "proc"
+  default = true
