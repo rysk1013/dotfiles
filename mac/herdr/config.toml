@@ -16,7 +16,6 @@ prefix = "ctrl+a"
 # panel
 split_horizontal = "prefix+d"
 split_vertical = "prefix+r"
-resize_mode = "prefix+s"
 
 # workspace
 previous_workspace = "prefix+p"
