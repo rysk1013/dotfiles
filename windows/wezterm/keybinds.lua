@@ -65,9 +65,9 @@ return {
 		-- { key = 'X', mods = 'LEADER', action = act.ActivateKeyTable{ name = 'copy_mode', one_shot =false }, },
 		{ key = "[", mods = "LEADER", action = act.ActivateCopyMode },
 		-- コピー
-		{ key = "c", mods = "CTRL", action = act.CopyTo("Clipboard") },
+		{ key = "c", mods = "SHIFT|CTRL", action = act.CopyTo("Clipboard") },
 		-- 貼り付け
-		{ key = "v", mods = "CTRL", action = act.PasteFrom("Clipboard") },
+		{ key = "v", mods = "SHIFT|CTRL", action = act.PasteFrom("Clipboard") },
 		-- Panel作成 leader + r or d
 		{ key = "d", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
 		{ key = "r", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
