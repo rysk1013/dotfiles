@@ -1,8 +1,11 @@
 7zip
+bottom
 brave
 ctrl2cap
+dark
 fd
 ffmpeg
+firefox
 font-hackgen-console-nf
 fzf
 git
@@ -10,6 +13,9 @@ go
 imagemagick
 innounp
 jq
+keepassxc
+leaf-markdown-viewer
+libreoffice
 localsend
 mingw
 neovim
@@ -25,4 +31,4 @@ tree-sitter
 vcredist2022
 wezterm-nightly
 yazi
-zoxide
+zoxide                  0.10.0  main         2026-10-17 20:50:02

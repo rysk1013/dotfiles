@@ -3,43 +3,43 @@
     {
       "Name": "main",
       "Source": "https://github.com/ScoopInstaller/Main",
-      "Updated": "2026-10-17T17:33:25+09:00",
-      "Manifests": 1690
+      "Updated": "2026-11-01T17:24:29+09:00",
+      "Manifests": 1703
     },
     {
       "Name": "extras",
       "Source": "https://github.com/ScoopInstaller/Extras",
-      "Updated": "2026-10-17T17:33:26+09:00",
-      "Manifests": 2425
+      "Updated": "2026-11-01T17:24:00+09:00",
+      "Manifests": 2451
     },
     {
       "Name": "versions",
       "Source": "https://github.com/ScoopInstaller/Versions",
-      "Updated": "2026-10-17T13:41:23+09:00",
-      "Manifests": 627
+      "Updated": "2026-11-01T15:24:25+09:00",
+      "Manifests": 630
     },
     {
       "Name": "sysinternals",
       "Source": "https://github.com/ScoopInstaller/Sysinternals",
-      "Updated": "2026-10-17T04:36:08+09:00",
+      "Updated": "2026-10-19T02:01:27+09:00",
       "Manifests": 76
     },
     {
       "Name": "nerd-fonts",
       "Source": "https://github.com/matthewjberger/scoop-nerd-fonts",
-      "Updated": "2026-09-27T01:59:28+09:00",
+      "Updated": "2026-10-25T13:05:48+09:00",
       "Manifests": 367
     },
     {
       "Name": "nonportable",
       "Source": "https://github.com/ScoopInstaller/Nonportable",
-      "Updated": "2026-10-17T04:37:13+09:00",
+      "Updated": "2026-10-30T18:31:57+09:00",
       "Manifests": 134
     },
     {
       "Name": "mo-san",
       "Source": "https://github.com/mo-san/scoop-bucket",
-      "Updated": "2026-10-17T13:29:09+09:00",
+      "Updated": "2026-10-18T13:36:22+09:00",
       "Manifests": 133
     }
   ],
@@ -49,6 +49,13 @@
       "Version": "26.04",
       "Source": "main",
       "Updated": "2026-10-16T16:21:29.1514286+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "bottom",
+      "Version": "0.14.9",
+      "Source": "main",
+      "Updated": "2026-10-23T21:52:09.3073592+09:00",
       "Info": ""
     },
     {
@@ -66,6 +73,13 @@
       "Info": ""
     },
     {
+      "Name": "dark",
+      "Version": "3.14.1",
+      "Source": "main",
+      "Updated": "2026-10-16T16:36:48.2466298+09:00",
+      "Info": ""
+    },
+    {
       "Name": "fd",
       "Version": "10.5.0",
       "Source": "main",
@@ -77,6 +91,13 @@
       "Version": "9.0.2",
       "Source": "main",
       "Updated": "2026-10-17T20:49:49.0793777+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "firefox",
+      "Version": "158.0.1",
+      "Source": "extras",
+      "Updated": "2026-10-25T21:42:37.886139+09:00",
       "Info": ""
     },
     {
@@ -129,6 +150,27 @@
       "Info": ""
     },
     {
+      "Name": "keepassxc",
+      "Version": "2.8.0",
+      "Source": "extras",
+      "Updated": "2026-10-23T21:50:03.0277038+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "leaf-markdown-viewer",
+      "Version": "1.29.2",
+      "Source": "main",
+      "Updated": "2026-11-01T17:47:08.6163658+09:00",
+      "Info": ""
+    },
+    {
+      "Name": "libreoffice",
+      "Version": "26.8.2",
+      "Source": "extras",
+      "Updated": "2026-10-31T14:02:12.7352788+09:00",
+      "Info": ""
+    },
+    {
       "Name": "localsend",
       "Version": "1.18.2",
       "Source": "extras",
@@ -165,16 +207,16 @@
     },
     {
       "Name": "powertoys",
-      "Version": "0.101.2362.0",
+      "Version": "0.102.2933.0",
       "Source": "extras",
-      "Updated": "2026-10-16T16:37:57.5666348+09:00",
+      "Updated": "2026-10-24T22:07:37.4467197+09:00",
       "Info": ""
     },
     {
       "Name": "pwsh",
-      "Version": "7.6.7",
+      "Version": "7.6.9",
       "Source": "main",
-      "Updated": "2026-10-16T16:19:26.4289659+09:00",
+      "Updated": "2026-10-31T00:54:07.3640164+09:00",
       "Info": ""
     },
     {
@@ -231,13 +273,6 @@
       "Version": "26.9.1",
       "Source": "main",
       "Updated": "2026-10-17T20:51:15.925263+09:00",
-      "Info": ""
-    },
-    {
-      "Name": "zoxide",
-      "Version": "0.10.0",
-      "Source": "main",
-      "Updated": "2026-10-17T20:50:02.5279804+09:00",
       "Info": ""
     }
   ]
